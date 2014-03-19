@@ -1,0 +1,82 @@
+html,button,input,select,textarea {
+	color: #222;
+}
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #333333;
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+img {
+	vertical-align: middle;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.center {
+	text-align: center;	
+}
+
+.container {
+	display: block;
+}
+
+#header {
+	width: 100%;
+}
+
+.content {
+	position: absolute;
+	width: 100%;
+	padding: 4px; 
+}
+
+.content__left {
+	float: left;
+	width: 50%;
+	height: 400px;
+	margin: 15px 15px 15px 0px;
+}
+
+.content__right {
+	float: left;
+	width: 48%;
+	height: 400px;
+	margin: 15px 0px;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	min-height: 100px;
+}
