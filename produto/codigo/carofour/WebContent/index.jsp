@@ -16,6 +16,7 @@
 			<div class="content__left">
 				<h3>Bem-Vindo!</h3>
 				<p>${horaLocal}</p>
+				<p>${teste}</p>
 			</div>
 			<div class="content__right">
 			</div>
