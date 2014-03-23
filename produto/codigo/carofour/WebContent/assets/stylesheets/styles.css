@@ -21,7 +21,7 @@ body {
 	text-shadow: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,h2,h3,h4,h5,h6 {
 	margin-top: 0px;
 }
 
@@ -57,7 +57,7 @@ strong {
 }
 
 .center {
-	text-align: center;	
+	text-align: center;
 }
 
 #container {
@@ -155,7 +155,7 @@ strong {
 	padding-bottom: 10px;
 }
 
-#footer {	
+#footer {
 	float: left;
 	width: 100%;
 	min-height: 100px;
@@ -170,14 +170,14 @@ strong {
 }
 
 .row {
-	padding: 9px;	
+	padding: 9px;
 }
 
 .r__item {
 	width: 283px;
 	height: 200px;
 	overflow: hidden;
-	float: left;	
+	float: left;
 	margin: 6px 8px;
 }
 
@@ -186,13 +186,12 @@ strong {
 }
 
 .r__item--large {
-    width: 582px;
+	width: 582px;
 }
 
 .r__item--plus {
 	height: 410px;
 }
-
 
 .r__item__inner {
 	background-color: #2ecc71;
@@ -208,7 +207,7 @@ strong {
 .r__item__inner--plus {
 	background-color: #2ecc71;
 	margin-top: -16px;
-	height: 176px;	
+	height: 176px;
 	text-align: center;
 	padding-top: 40px;
 	font-weight: bolder;
@@ -254,7 +253,7 @@ strong {
 
 .inverse {
 	background-color: #2ecc71;
-	color: #2c3e50;	
+	color: #2c3e50;
 }
 
 .pull__left {
@@ -263,4 +262,9 @@ strong {
 
 .pull__right {
 	float: right;
+}
+
+#icone_cabecalho {
+	position: relative;
+	float: left;
 }

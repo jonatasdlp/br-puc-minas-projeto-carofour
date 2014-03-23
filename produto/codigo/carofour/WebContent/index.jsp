@@ -8,8 +8,10 @@
 			</div>
 			<div class="widget__body">
 				<p class="center">
-				 	[ Texto aqui! ]
-				 	<br/>
+				 	<img src="assets/images/carofour.png" class="image__item--plus">
+				 	<br></br>
+				 	Supermercado Carofour oferece soluções eficientes e inovadoras, cuidando sempre dos pequenos detalhes, de modo a deixar a sua compra mais fácil e gostosa. Tem tudo o que o que você precisa com qualidade e oferece um atendimento do jeito que você gosta. Carofour: "lugar de gente feliz". 
+				 	<br />
 				 	${horaLocal}
 				</p>
 			</div>		
@@ -21,7 +23,7 @@
 						<img src="assets/images/8.jpg" class="image__item--plus">
 					</div>
 					<div class="r__item__inner">
-						<p class="center">Descrição do produto 1  Lista de itens</p>
+						<p class="center">Laticínios - Toda linha de queijos e massas a sua escolha!</p>
 						<a href="#" class="button-flat pull__left">Comprar</a>
 					</div>
 				</div>
@@ -30,7 +32,7 @@
 						<img src="assets/images/1.jpg" class="image__item--large">
 					</div>
 					<div class="r__item__inner--plus">
-						<p class="center">Descrição do produto 2  Lista de itens</p>
+						<p class="center">Padaria - Massas gostosas e saborosas a sua disposição! </p>
 						<a href="#" class="button-flat">Comprar</a>
 					</div>
 				</div>
@@ -44,7 +46,7 @@
 				</div>
 				<div class="r__item r__item--small">
 					<div class="pull__left">
-						<img src="assets/images/5.jpg" class="image__item--small">
+						<img src="assets/images/6.jpg" class="image__item--small">
 					</div>
 					<div class="r__item__inner--small">
 						<a href="#" class="button-flat">Comprar</a>
@@ -52,7 +54,7 @@
 				</div>
 				<div class="r__item r__item--small">
 					<div class="pull__left">
-						<img src="assets/images/5.jpg" class="image__item--small">
+						<img src="assets/images/7.jpg" class="image__item--small">
 					</div>
 					<div class="r__item__inner--small">
 						<a href="#" class="button-flat">Comprar</a>
@@ -63,7 +65,8 @@
 						<img src="assets/images/4.jpg" class="image__item--large">
 					</div>
 					<div class="r__item__inner--plus">
-						<p class="center">Descrição do produto 4  Lista de itens</p>
+						<p class="center">HortiFruti - Produtos fresquinhos todos os dias.  
+							Frutas, verduras, legumes!</p>
 						<a href="#" class="button-flat">Comprar</a>
 					</div>
 				</div>
