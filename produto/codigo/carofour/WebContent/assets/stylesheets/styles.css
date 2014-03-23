@@ -95,6 +95,11 @@ strong {
 	border-right: 1px solid #2c3e50;
 }
 
+#menu ul li a {
+	text-decoration: none;
+	color: white
+}
+
 #menu ul li:hover {
 	background-color: #34495e;
 }
@@ -140,14 +145,12 @@ strong {
 
 .content__left {
 	float: left;
-	width: 48%;
 	min-height: 654px;
 	clear: both;
 }
 
 .content__right {
 	float: left;
-	width: 46%;
 	min-height: 445px;
 	padding-bottom: 10px;
 }
@@ -234,7 +237,7 @@ strong {
 }
 
 .wdt__3 {
-	width: 34%;
+	width: 35%;
 }
 
 .wdt__9 {

@@ -4,8 +4,8 @@
 </h1>
 <div id="menu">
 	<ul>
-		<li>Menu 1</li>
-		<li>Menu 2</li>
+		<li><a href="/carofour/index">Início</a></li>
+		<li><a href="produtos">Produtos</a></li>
 		<li>Menu 3</li>
 		<li>Menu 4</li>
 	</ul>
