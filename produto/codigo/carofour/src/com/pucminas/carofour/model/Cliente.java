@@ -9,6 +9,8 @@ public class Cliente {
 	private String endereco;
 	private String telefone;
 	
+	public Cliente() {}
+	
 	public String getNomeCompleto() {
 		return nomeCompleto;
 	}

@@ -1,6 +1,7 @@
 package com.pucminas.carofour.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -26,6 +27,7 @@ public class CompraServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Cliente cliente = new Cliente();
+		
 		cliente.setNomeCompleto(request.getParameter("nome"));
 		cliente.setDataNascimento(request.getParameter("nascimento"));
 		cliente.setSexo(request.getParameter("sexo").toCharArray()[0]);
@@ -34,7 +36,7 @@ public class CompraServlet extends HttpServlet {
 		cliente.setEmail(request.getParameter("email"));
 		cliente.setSenha(request.getParameter("senha"));
 		
-		request.setAttribute("cliente", cliente);
+		request.setAttribute("cliente", cliente.getNomeCompleto());
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("finalizaCompra.jsp"); 
 	    dispatcher.forward(request, response);
