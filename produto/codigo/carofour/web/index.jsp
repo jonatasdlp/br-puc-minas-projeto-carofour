@@ -2,23 +2,23 @@
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags"%>
 <t:genericpage>
 	<jsp:body>
-		<div class="content__widget content__left wdt__3">
+		<div class="content__widget content__left wdt__25">
 			<div class="widget__header">
 				<h3>Bem-Vindo!</h3>
 			</div>
 			<div class="widget__body">
 				<p class="center">
-				 	<img src="assets/images/carofour.png" class="image__item--plus">
+				 	<img src="assets/images/carofour.png" class="logo__full">
 				 	<br></br>
-				 	Supermercado Carofour oferece soluções eficientes e inovadoras, cuidando sempre dos pequenos detalhes, de modo a deixar a sua compra mais fácil e gostosa. Tem tudo o que o que você precisa com qualidade e oferece um atendimento do jeito que você gosta. Carofour: "lugar de gente feliz". 
+				 	Supermercado Carofour oferece soluções eficientes e inovadoras, cuidando sempre dos pequenos detalhes, de modo a deixar a sua compra mais fácil e gostosa. Tem tudo o que o que você precisa com qualidade e oferece um atendimento do jeito que você gosta.
 				</p>
 			</div>		
 		</div>
-		<div class="content__widget content__right wdt__9">
+		<div class="content__widget content__right wdt__75">
 			<div class="row">
 				<div class="r__item r__item--plus">
-					<div>
-						<img src="assets/images/8.jpg" class="image__item--plus">
+					<div class="r__item__inner--plus">
+						<img src="assets/images/8.jpg" class="image__item--default" >
 					</div>
 					<div class="r__item__inner">
 						<p class="center">Laticínios - Toda linha de queijos e massas a sua escolha!</p>
