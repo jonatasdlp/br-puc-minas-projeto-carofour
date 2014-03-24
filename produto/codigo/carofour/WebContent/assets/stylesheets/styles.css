@@ -4,7 +4,7 @@ html,button,input,select,textarea {
 
 body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	color: #34495e;
+	color: #ecf0f1;
 	font-size: 1em;
 	line-height: 1.4;
 	background-color: #ecf0f1;
@@ -52,8 +52,8 @@ strong {
 	font-weight: 100;
 	font-size: 57%;
 	position: absolute;
-	left: 4px;
-	top: 33px;
+	left: -32px;
+	top: 28px;
 }
 
 .center {
@@ -67,20 +67,21 @@ strong {
 #header {
 	padding: 0;
 	position: relative;
-	background-color: #2c3e50;
+	background-color: #D0D7DB;
 	height: 134px;
 	padding-top: 18px;
+	border-top: 38px solid #2c3e50
 }
 
 #header h1 {
 	color: #ecf0f1;
 	margin-top: 0px;
-	margin: 10px 0px 40px 30px;
+	margin: 21px 12px 30px 64px;
 }
 
 #menu {
 	height: 40px;
-	background-color: #2ecc71;
+	background-color: #459C30;
 	color: #ecf0f1;
 	font-weight: 800;
 	position: relative
@@ -104,6 +105,16 @@ strong {
 	background-color: #34495e;
 }
 
+.logo {
+	position: absolute;
+	top: 20px;
+}
+
+.logo__brand {
+	width: 380px;
+	margin-left: 39px;
+}
+
 .active {
 	background-color: #34495e;
 }
@@ -113,10 +124,12 @@ strong {
 	position: relative;
 	width: 310px;
 	margin: 23px 54px;
+	color: #2c3e50 !important;
 }
 
 .content {
 	width: 100%;
+	margin-top: 20px;
 }
 
 .content__widget {
@@ -125,7 +138,7 @@ strong {
 }
 
 .widget__header {
-	background-color: #34495e;
+	background-color: #429B2C;
 	height: 70px;
 	text-align: center;
 	line-height: 2.5em;
@@ -135,6 +148,8 @@ strong {
 
 .widget__body {
 	padding: 30px;
+	color: #2c3e50 !important;
+	font-weight: bolder !important;
 }
 
 .content_block {
@@ -159,9 +174,10 @@ strong {
 	float: left;
 	width: 100%;
 	min-height: 100px;
-	background-color: #7f8c8d;
-	color: #ecf0f1;
+	background-color: #D0D7DB;
+	color: #2c3e50;
 	border-top: 40px solid #2c3e50;
+	border-bottom: 38px solid #459C30;
 }
 
 #footer h5 {
@@ -174,7 +190,7 @@ strong {
 }
 
 .r__item {
-	width: 283px;
+	width: 279px;
 	height: 200px;
 	overflow: hidden;
 	float: left;
@@ -186,7 +202,7 @@ strong {
 }
 
 .r__item--large {
-	width: 582px;
+	width: 574px;
 }
 
 .r__item--plus {
@@ -194,7 +210,7 @@ strong {
 }
 
 .r__item__inner {
-	background-color: #2ecc71;
+	background-color: #459C30;
 	height: 100px;
 	margin-top: -14px;
 }
@@ -205,7 +221,7 @@ strong {
 }
 
 .r__item__inner--plus {
-	background-color: #2ecc71;
+	background-color: #459C30;
 	margin-top: -16px;
 	height: 176px;
 	text-align: center;
@@ -236,11 +252,11 @@ strong {
 }
 
 .wdt__3 {
-	width: 35%;
+	width: 38.5%;
 }
 
 .wdt__9 {
-	width: 61%;
+	width: 57.5%;
 }
 
 .button-flat {

@@ -11,8 +11,6 @@
 				 	<img src="assets/images/carofour.png" class="image__item--plus">
 				 	<br></br>
 				 	Supermercado Carofour oferece soluções eficientes e inovadoras, cuidando sempre dos pequenos detalhes, de modo a deixar a sua compra mais fácil e gostosa. Tem tudo o que o que você precisa com qualidade e oferece um atendimento do jeito que você gosta. Carofour: "lugar de gente feliz". 
-				 	<br />
-				 	${horaLocal}
 				</p>
 			</div>		
 		</div>
