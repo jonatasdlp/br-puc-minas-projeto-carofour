@@ -160,7 +160,7 @@ strong {
 
 .content__left {
 	float: left;
-	min-height: 654px;
+	min-height: 485px;
 	clear: both;
 }
 
@@ -265,6 +265,7 @@ strong {
 	color: #ecf0f1;
 	font-weight: bolder;
 	text-decoration: none;
+	border: none;
 }
 
 .inverse {
@@ -283,4 +284,21 @@ strong {
 #icone_cabecalho {
 	position: relative;
 	float: left;
+}
+
+.form__item, .form__action {
+	padding: 5px;
+}
+
+.form__item input {
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;	
+	padding: 5px;
+	width: 96%;
+	border: 1px solid #2c3e50;
+}
+
+.form__action input {
+	margin-right: 10px;
 }
