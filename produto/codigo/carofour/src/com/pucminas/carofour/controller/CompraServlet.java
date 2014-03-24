@@ -1,4 +1,4 @@
-package com.pucminas.carofour;
+package com.pucminas.carofour.controller;
 
 import java.io.IOException;
 

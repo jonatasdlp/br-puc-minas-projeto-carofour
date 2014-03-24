@@ -1,4 +1,4 @@
-package com.pucminas.carofour;
+package com.pucminas.carofour.controller;
 
 import java.io.IOException;
 
@@ -10,10 +10,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/produtos")
-public class ProdutosServlet extends HttpServlet {
+public class CategoriaServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
- 
-    public ProdutosServlet() {
+       
+    public CategoriaServlet() {
         super();
     }
 
@@ -22,4 +22,5 @@ public class ProdutosServlet extends HttpServlet {
 		RequestDispatcher dispatcher = request.getRequestDispatcher("produtos.jsp"); 
 	    dispatcher.forward(request, response);
 	}
+
 }
