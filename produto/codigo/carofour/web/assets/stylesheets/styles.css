@@ -151,6 +151,14 @@ strong {
 	font-weight: bolder !important;
 }
 
+.widget__body2
+{
+	float:left;
+	position:relative;
+	background-color: blue;	
+}
+
+
 .content_block {
 	float: left;
 	width: 98%;
@@ -264,6 +272,11 @@ strong {
 	width: 48.5%;
 	margin: 0px;
 	margin-right: 1%;
+}
+
+.disLaterDir
+{
+	padding-left: 30px;
 }
 
 .wdt__75 {
