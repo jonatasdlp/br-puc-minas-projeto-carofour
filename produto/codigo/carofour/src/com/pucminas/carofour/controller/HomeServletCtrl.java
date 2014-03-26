@@ -1,6 +1,7 @@
 package com.pucminas.carofour.controller;
 
 import java.io.IOException;
+import java.util.Date;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -9,18 +10,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/produtos")
-public class CategoriaServlet extends HttpServlet {
+/**
+ * @version 1.0
+ */
+
+@WebServlet("/index")
+public class HomeServletCtrl extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    public CategoriaServlet() {
+   
+    public HomeServletCtrl() {
         super();
     }
-
+    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setAttribute("produtos", "Lista com produtos aqui");
-		RequestDispatcher dispatcher = request.getRequestDispatcher("produtos.jsp"); 
-	    dispatcher.forward(request, response);
+		Date dateNow = new Date();
+		request.setAttribute("horaLocal", dateNow);
+		RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp"); 
+	    dispatcher.forward(request, response); 
 	}
-
 }

@@ -1,8 +1,6 @@
 package com.pucminas.carofour.controller;
 
 import java.io.IOException;
-import java.util.ArrayList;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,11 +10,17 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.pucminas.carofour.model.Cliente;
 
+/**
+ * @version 1.0
+ */
+
 @WebServlet("/compra")
-public class CompraServlet extends HttpServlet {
+public class CompraServletCtrl extends HttpServlet {
+	
+	
 	private static final long serialVersionUID = 1L;
        
-    public CompraServlet() {
+    public CompraServletCtrl() {
         super();
     }
 
