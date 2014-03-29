@@ -4,10 +4,11 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Supermercado - Carofour</title>
-	<script type="text/javascript" src="assets/javascripts/vendor/jquery-1.11.0.js"></script>
-	<script type="text/javascript" src="assets/javascripts/scripts.js"></script>
-	<link type="text/css" rel="stylesheet" href="assets/stylesheets/vendor/normalize.css">
-	<link type="text/css" rel="stylesheet" href="assets/stylesheets/styles.css">
+	<script type="text/javascript" src="assets/js/vendor/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="assets/js/scripts.js"></script>
+	<link type="text/css" rel="stylesheet" href="assets/css/vendor/normalize.css">
+	<link type="text/css" rel="stylesheet" href="assets/css/vendor/font-awesome.css">
+	<link type="text/css" rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
  	<div id="container">
