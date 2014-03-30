@@ -13,7 +13,7 @@
 	<div class="content">
 		<ul>
 			<li><a href="/carofour/index">Início</a></li>
-			<li><a href="produtos">Produtos</a></li>
+			<li><a href="produtos?categoria=1">Produtos</a></li>
 			<li><a href="#">Ofertas</a></li>
 			<li><a href="#">Lojas</a></li>
 			<li><a href="#">Marcas</a></li>

@@ -22,7 +22,7 @@
 					</div>
 					<div class="r__item__inner">
 						<p class="center">Laticínios - Toda linha de queijos e massas a sua escolha!</p>
-						<a href="#" class="button-flat pull__left">Comprar</a>
+						<a href="/carofour/produtos?categoria=1" class="button-flat pull__left">Comprar</a>
 					</div>
 				</div>
 				<div class="r__item r__item--large">
@@ -31,7 +31,7 @@
 					</div>
 					<div class="r__item__inner--plus">
 						<p class="center">Padaria - Massas gostosas e saborosas a sua disposição! </p>
-						<a href="#" class="button-flat">Comprar</a>
+						<a href="/carofour/produtos?categoria=3" class="button-flat">Comprar</a>
 					</div>
 				</div>
 				<div class="r__item r__item--small">
@@ -39,7 +39,7 @@
 						<img src="assets/images/3.jpg" class="image__item--small">
 					</div>
 					<div class="r__item__inner--small">
-						<a href="#" class="button-flat">Comprar</a>
+						<a href="/carofour/produtos?categoria=1" class="button-flat">Comprar</a>
 					</div>
 				</div>
 				<div class="r__item r__item--small">
@@ -65,7 +65,7 @@
 					<div class="r__item__inner--plus">
 						<p class="center">HortiFruti - Produtos fresquinhos todos os dias.  
 							Frutas, verduras, legumes!</p>
-						<a href="#" class="button-flat">Comprar</a>
+						<a href="/carofour/produtos?categoria=4" class="button-flat">Comprar</a>
 					</div>
 				</div>
 			</div>

@@ -43,7 +43,7 @@
 				
 			</div>	
 			</div>
-		<div class="widget__content content__right wdt__25 disLaterDir"">
+		<div class="widget__content content__right wdt__25 disLaterDir">
 			<div class="widget__header">
 				<h3>Condições de Compra</h3>
 			</div>
