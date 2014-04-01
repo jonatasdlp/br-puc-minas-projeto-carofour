@@ -5,7 +5,6 @@ package com.pucminas.carofour.model;
  */
 
 public class Cliente {
-	
 	private String nomeCompleto;
 	private String email;
 	private String senha;

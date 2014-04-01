@@ -16,8 +16,6 @@ import com.pucminas.carofour.model.Cliente;
 
 @WebServlet("/compra")
 public class CompraServletCtrl extends HttpServlet {
-	
-	
 	private static final long serialVersionUID = 1L;
        
     public CompraServletCtrl() {
