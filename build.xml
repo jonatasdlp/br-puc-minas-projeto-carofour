@@ -1,9 +1,9 @@
 <?xml version="1.0"?>   
 <project name="java-junit-template-project" default="test" basedir=".">
   <property name="main.build.dir" value="build/classes" />  
-  <property name="main.src.dir" value="src" />
+  <property name="main.src.dir" value="produto/carofour/src" />
   <property name="test.build.dir" value="build/test" />
-  <property name="test.src.dir" value="src/com/pucminas/carofour/test" />
+  <property name="test.src.dir" value="produto/carofour/src/com/pucminas/carofour/test" />
 
   <path id="classpath.base" />
 
