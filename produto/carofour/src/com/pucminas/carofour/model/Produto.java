@@ -1,26 +1,21 @@
 package com.pucminas.carofour.model;
 
-import java.io.Serializable;
+/**
+ * @version 1.0
+ */
 
-public class Produto implements Serializable {
+public class Produto {
+	private String nome; 
+	private String descricao;
+	private String enderecoImagem;
+	private Double preco;
 	
-	/**
-	 * @version 1.0
-	 */
-	private static final long serialVersionUID = 1L;
-
 	public Produto(String nome, String descricao, String enderecoImagem,Double preco) {
-		super();
 		this.nome = nome;
 		this.descricao = descricao;
 		this.enderecoImagem = enderecoImagem;
 		this.preco = preco;
 	}
-	
-	private String nome; 
-	private String descricao;
-	private String enderecoImagem;
-	private Double preco;
 	
 	public String getNome() {
 		return nome;
