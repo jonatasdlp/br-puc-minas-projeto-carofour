@@ -24,20 +24,10 @@ public class CategoriaServletCtrl extends HttpServlet {
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String idCategoria = request.getParameter("categoria");
-		request.setAttribute("produtos", definiCategoria(idCategoria).getProdutos());
+		int id = Integer.parseInt(request.getParameter("categoria")) - 1;
+		request.setAttribute("produtos", Categoria.listarCategorias().get(id).getProdutos());
 		RequestDispatcher dispatcher = request.getRequestDispatcher("produtos.jsp"); 
 		dispatcher.forward(request, response);
-	}
-	
-	public Categoria definiCategoria(String idCategoria) {
-		Categoria categoria = null;
-		for (Categoria categoriaSelecionada : Categoria.listarCategorias()) {
-			if (idCategoria == categoriaSelecionada.getNome())
-				categoria = categoriaSelecionada;
-		}
-	
-		return categoria;
 	}
 }
 

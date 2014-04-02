@@ -68,7 +68,7 @@ public class Categoria {
 		categorias.add(categoriaPadaria);
 		
 		Categoria categoriaHortiFrutiGranjeiros = new Categoria();
-		categoriaHortiFrutiGranjeiros.setNome("Carnes");
+		categoriaHortiFrutiGranjeiros.setNome("Horti Fruti Granjeiros");
 		categoriaHortiFrutiGranjeiros.adicionarProduto(new Produto("Alface", "A verdinha", "assets/images/7.jpg", 10.00));
 		categoriaHortiFrutiGranjeiros.adicionarProduto(new Produto("Espinafre", "Marinheiro Popeye", "assets/images7.jpg", 10.00));
 		categoriaHortiFrutiGranjeiros.adicionarProduto(new Produto("Ovos", "Galinha pintadinha", "assets/images/7.jpg", 10.00));
