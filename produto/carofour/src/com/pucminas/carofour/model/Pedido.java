@@ -1,5 +1,7 @@
 package com.pucminas.carofour.model;
 
+import java.util.List;
+
 /**
  * @version 1.0
  */
@@ -15,7 +17,7 @@ public class Pedido {
 		this.numero = numero;
 	}
 	
-	public void calcularCustoTotal(ItemPedido[] items) {
+	public void calcularCustoTotal(List<ItemPedido> items) {
 		
 	}
 	
