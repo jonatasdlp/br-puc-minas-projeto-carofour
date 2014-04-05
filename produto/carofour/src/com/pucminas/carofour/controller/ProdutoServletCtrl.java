@@ -30,8 +30,7 @@ public class ProdutoServletCtrl extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
-		List<ItemPedido> items = (List<ItemPedido>)session.getAttribute("produtos");
-		
+		List<ItemPedido> items = (List<ItemPedido>)session.getAttribute("items");	
 		session.setMaxInactiveInterval(180);	
 		int categoriaParam = Integer.parseInt(request.getParameter("categoria"));
 		String produtoParam = request.getParameter("produto");
@@ -40,8 +39,8 @@ public class ProdutoServletCtrl extends HttpServlet {
 			items = new ArrayList<ItemPedido>();
 		
 		for (Produto produto : Categoria.listarCategorias().get(categoriaParam).getProdutos()) {
-			if(produto.getNome() == produtoParam.toString()){
-				ItemPedido item = (ItemPedido) produto;
+			if(produtoParam.toString().equals(produto.getNome().toString())){
+				ItemPedido item = new ItemPedido(produto, 1);
 				items.add(item);
 			}
 		}
