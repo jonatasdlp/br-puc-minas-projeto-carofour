@@ -48,4 +48,37 @@ public class Pedido {
 		this.items.add(item);
 	}
 	
+	public boolean atualizaItem(Produto produto) {
+		boolean atualizaItem = false;
+		for (ItemPedido item : this.items) {
+			if (item.getProduto().getNome().equals(produto.getNome())) {
+				int quantidade = item.getQuantidade() + 1;
+				item.setQuantidade(quantidade);
+				atualizaItem = true;
+			}
+		}
+		return atualizaItem;
+	}
+
+	public void atualizaItem(String nomeProduto, int quantidade) {
+		for (ItemPedido item : this.items) {
+			if (item.getProduto().getNome().equals(nomeProduto)) {
+				int diferenca = quantidade - item.getQuantidade();
+				int qtd = item.getQuantidade() + diferenca;
+				item.setQuantidade(qtd);
+			}
+		}
+	}
+	
+	public void removerItem(String nomeProduto) {
+		for (ItemPedido item : this.items) {
+			if (item.getProduto().getNome().equals(nomeProduto))
+				this.items.remove(item);
+		}
+	}
+	
+	public void removerItems() {
+		this.items = new ArrayList<ItemPedido>();
+	}
+	
 }

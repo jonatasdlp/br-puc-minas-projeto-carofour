@@ -40,6 +40,10 @@ public class Categoria {
 		return produtos;
 	}
 	
+	public String getIdCategoria() {
+		return nome.replaceAll("\\s+","");
+	}
+	
 	public static List<Categoria> listarCategorias() {
 		List<Categoria> categorias = new LinkedList<Categoria>();
 		
@@ -68,7 +72,7 @@ public class Categoria {
 		categorias.add(categoriaPadaria);
 		
 		Categoria categoriaHortiFrutiGranjeiros = new Categoria();
-		categoriaHortiFrutiGranjeiros.setNome("Horti Fruti Granjeiros");
+		categoriaHortiFrutiGranjeiros.setNome("Horti Fruti");
 		categoriaHortiFrutiGranjeiros.adicionarProduto(new Produto("Alface", "A verdinha", "assets/images/7.jpg", 10.00));
 		categoriaHortiFrutiGranjeiros.adicionarProduto(new Produto("Espinafre", "Marinheiro Popeye", "assets/images7.jpg", 10.00));
 		categoriaHortiFrutiGranjeiros.adicionarProduto(new Produto("Ovos", "Galinha pintadinha", "assets/images/7.jpg", 10.00));

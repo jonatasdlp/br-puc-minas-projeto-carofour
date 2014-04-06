@@ -48,4 +48,15 @@ public class Produto {
 	public void setPreco(Double preco ) {
 		this.preco = preco;
 	}
+	
+	public static Produto localizarProduto(String nome) {
+		Produto produtoEncontrado = null;
+		for (Categoria categoria : Categoria.listarCategorias()) {
+			for (Produto produto :categoria.getProdutos()) {
+				if (produto.getNome().equals(nome))
+					produtoEncontrado =  produto;
+			}
+		}
+		return produtoEncontrado;
+	}
 }

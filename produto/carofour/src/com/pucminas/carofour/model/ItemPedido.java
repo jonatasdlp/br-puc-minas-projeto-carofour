@@ -1,4 +1,4 @@
-package com.pucminas.carofour.model;
+package com.pucminas.carofour.model;		
 
 /**
  * @version 1.0
@@ -12,7 +12,7 @@ public class ItemPedido {
 		this.produto = produto;
 		this.quantidade = quantidade;
 	}
-	
+
 	public int getQuantidade() {
 		return quantidade;
 	}
@@ -28,4 +28,9 @@ public class ItemPedido {
 	public void setProduto(Produto produto) {
 		this.produto = produto;
 	}
+	
+	public double valorTotalProduto() {
+		return produto.getPreco() * this.quantidade;
+	}
+	
 }
