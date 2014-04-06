@@ -6,19 +6,17 @@
 	<title>Supermercado - Carofour</title>
 	<script type="text/javascript" src="assets/js/vendor/jquery-1.11.0.js"></script>
 	<script type="text/javascript" src="assets/js/scripts.js"></script>
-	<link type="text/css" rel="stylesheet" href="assets/css/vendor/normalize.css">
-	<link type="text/css" rel="stylesheet" href="assets/css/vendor/font-awesome.css">
 	<link type="text/css" rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
- 	<div id="container">
- 		<div id="header">
+ 	<div id="corpo">
+ 		<div id="cabecalho">
  			<jsp:include page="/partials/header.jsp" />
 		</div>
-		<div class="content">
+		<div class="conteudo">
 			<jsp:doBody/>
 		</div>
-		<div id="footer">
+		<div id="rodape">
 			<jsp:include page="/partials/footer.jsp" />
 		</div>	
 	</div>
