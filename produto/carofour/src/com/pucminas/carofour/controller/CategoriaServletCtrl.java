@@ -15,7 +15,7 @@ import com.pucminas.carofour.model.Categoria;
  * @version 1.0
  */
 
-@WebServlet("/produtos")
+@WebServlet("/categorias")
 public class CategoriaServletCtrl extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -24,8 +24,8 @@ public class CategoriaServletCtrl extends HttpServlet {
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		int id = Integer.parseInt(request.getParameter("categoria")) - 1;
-		request.setAttribute("produtos", Categoria.listarCategorias().get(id).getProdutos());
+		request.setAttribute("produtos", Categoria.listarCategorias().get(1).getProdutos());
+		request.setAttribute("categorias", Categoria.listarCategorias());
 		RequestDispatcher dispatcher = request.getRequestDispatcher("produtos.jsp"); 
 		dispatcher.forward(request, response);
 	}

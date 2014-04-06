@@ -26,7 +26,6 @@ public class HomeServletCtrl extends HttpServlet {
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Date dateNow = new Date();
-		request.setAttribute("horaLocal", dateNow);
 		request.setAttribute("categorias", Categoria.listarCategorias());
 		RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp"); 
 	    dispatcher.forward(request, response); 
