@@ -31,13 +31,12 @@
 				<div class="formulario--dados">
 					<input type="text" name="nome" class="textBox--formulario" placeholder="CPF" required>
 				</div>
-				<label class="textBox--formulario" for="cartao">Cartão de Crédito/Débito</label>
+				<label class="formulario--dados" for="cartao">Cartão de Crédito/Débito</label>
 				<div class="formulario--dados">
-					<select id="dropdown--formulario" title="anada">
-  						<option value="volvo">Volvo</option>
- 						<option value="saab">Saab</option>
-  						<option value="mercedes">Mercedes</option>
- 						<option value="audi">Audi</option>
+					<select id="dropdown--formulario">
+  						<option value="nada"></option>
+  						<option value="credito">Cartão de Crédito</option>
+ 						<option value="debito">Cartão de Débito</option>  						
 					</select> 
 				</div>	
 			</div>
