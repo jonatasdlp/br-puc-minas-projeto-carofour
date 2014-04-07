@@ -5,38 +5,38 @@
 			<div class="conteudo--interno conteudo--50 destaque">
 				<h1>Dados Pessoais</h1>			
 				<div class="formulario--dados">
-					<input type="text" name="nome" class="textBox--formulario" placeholder="Nome Completo" required>
+					<input type="text" name="nome" class="texto--formulario" placeholder="Nome Completo" required>
 				</div>
 				<div class="formulario--dados">
-					<input type="text" name="nascimento" class="textBox--formulario" placeholder="Data de Nascimento" required>
+					<input type="text" name="nascimento" class="texto--formulario" placeholder="Data de Nascimento" required>
 				</div>
 				<div class="formulario--dados">
-					<input type="text" name="sexo" class="textBox--formulario" placeholder="Sexo" required>
+					<input type="text" name="sexo" class="texto--formulario" placeholder="Sexo" required>
 				</div>
 				<div class="formulario--dados">
-					<input type="text" name="endereco" class="textBox--formulario" placeholder="Endere√ßo" required>
+					<input type="text" name="endereco" class="texto--formulario" placeholder="Endere√ßo" required>
 				</div>
 				<div class="formulario--dados">
-					<input type="text" name="telefone" class="textBox--formulario" placeholder="Telefone (DDD) + (N√∫mero)" required>
+					<input type="text" name="telefone" class="texto--formulario" placeholder="Telefone (DDD) + (N√∫mero)" required>
 				</div>
 				<div class="formulario--dados">
-					<input type="text" name="email" class="textBox--formulario" placeholder="E-mail" required>
+					<input type="text" name="email" class="texto--formulario" placeholder="E-mail" required>
 				</div>
 				<div class="formulario--dados">
-					<input type="password" name="password" class="textBox--formulario" placeholder="Senha" required>
+					<input type="password" name="password" class="texto--formulario" placeholder="Senha" required>
 				</div>
 			</div>
 			<div class="conteudo--interno conteudo--50 destaque">
-				<h1>Condi√ß√µes de Compra</h1>			
+				<h1>CondiÁıes de Compra</h1>			
 				<div class="formulario--dados">
-					<input type="text" name="nome" class="textBox--formulario" placeholder="CPF" required>
+					<input type="text" name="nome" class="texto--formulario" placeholder="CPF" required>
 				</div>
-				<label class="formulario--dados" for="cartao">Cart√£o de Cr√©dito/D√©bito</label>
+				<label class="formulario--dados" for="cartao">Cart„o de crÈdito/dÈbito</label>
 				<div class="formulario--dados">
-					<select id="dropdown--formulario">
+					<select id="selecao--formulario">
   						<option value="nada"></option>
-  						<option value="credito">Cart√£o de Cr√©dito</option>
- 						<option value="debito">Cart√£o de D√©bito</option>  						
+  						<option value="credito">Cart„o de CrÈdito</option>
+ 						<option value="debito">Cart„o de DÈdito</option>  						
 					</select> 
 				</div>	
 			</div>

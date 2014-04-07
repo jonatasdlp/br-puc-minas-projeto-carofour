@@ -42,7 +42,7 @@ public class CompraServletCtrl extends HttpServlet {
 		Pedido pedido = (Pedido)session.getAttribute("pedido");
 		String produto = request.getParameter("produto");
 		String quantidade = request.getParameter("quantidade");
-		System.out.println(produto+ "***" + quantidade);
+		
 		if (pedido == null)
 			request.setAttribute("items", new ArrayList<ItemPedido>());
 		else {
