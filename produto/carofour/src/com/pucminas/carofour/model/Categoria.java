@@ -48,7 +48,7 @@ public class Categoria {
 		List<Categoria> categorias = new LinkedList<Categoria>();
 		
 		Categoria categoriaLaticinios = new Categoria();
-		categoriaLaticinios.setNome("LaticÃ­nios");
+		categoriaLaticinios.setNome("Laticínios");
 		categoriaLaticinios.adicionarProduto(new Produto("Iogurte", "AKUT", "assets/images/3.jpg", 10.00));
 		categoriaLaticinios.adicionarProduto(new Produto("Mussarela", "Mieirinha", "assets/images/3.jpg", 10.00));
 		categoriaLaticinios.adicionarProduto(new Produto("Requijao", "DeLeiite", "assets/images/3.jpg", 10.00));

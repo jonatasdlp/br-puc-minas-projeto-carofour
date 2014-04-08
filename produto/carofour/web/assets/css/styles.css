@@ -347,15 +347,55 @@ textarea {
 
 .formulario--dados{
 	background-color: #2ECC71;
-	width: 440px;
+	width: 382px;
 	padding: 10px;
+	margin-left: 30px;
 }
 
 .texto--formulario{
-	width: 350px;
+	width: 319px;
 }
 
 #selecao--formulario{
-	width: 300px;
+	width: 250px;
 }
+
+.label--formulario
+{
+	background-color: #2ECC71;
+	width: 402px;
+	margin-left: 30px;
+}
+
+.fieldset--formulario
+{
+	color: gray;
+	border: 1px solid lightgray;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.tamanho--Compra
+{
+	width: 100px;
+}
+
+.lateral--Compra
+{
+	position: relative;
+	float: left;
+	margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
