@@ -8,6 +8,7 @@ $(function(){
 	atualizarItem();
 	removeItem();
 	removeItems();
+	redirectHome();
 });
 
 $( document ).ajaxComplete(function() {
@@ -131,5 +132,11 @@ function removeItems() {
 		    	$(".compras").replaceWith(data);
 		    }
 		});
+	});
+}
+
+function redirectHome() {
+	$( "#logo" ).on( "click", function() {
+		window.location = "/carofour/index"; 
 	});
 }
