@@ -2,6 +2,7 @@ package com.pucminas.carofour.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * @version 1.0
@@ -79,6 +80,11 @@ public class Pedido {
 	
 	public void removerItems() {
 		this.items = new ArrayList<ItemPedido>();
+	}
+	
+	public void gerarNumeroPedido() {
+		Random randomGenerator = new Random();
+		this.numero = randomGenerator.nextInt(99999);
 	}
 	
 }

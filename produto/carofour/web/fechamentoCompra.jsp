@@ -1,7 +1,7 @@
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags"%>
 <t:layout>
 	<jsp:body>		
-		<form action="compra" method="POST">
+		<form action="finalizar" method="POST">
 			<div class="conteudo--interno conteudo--50 destaque">
 				<h1>Dados Pessoais</h1>			
 				<div class="formulario--dados">
@@ -11,13 +11,16 @@
 					<input type="text" name="nascimento" class="texto--formulario" placeholder="Data de Nascimento" required>
 				</div>
 				<div class="formulario--dados">
-					<input type="text" name="sexo" class="texto--formulario" placeholder="Sexo" required>
+					<select id="selecao--formulario" name="sexo">
+ 						<option value="m">Masculino</option>
+ 						<option value="f">Feminino</option>  						
+					</select>
 				</div>
 				<div class="formulario--dados">
-					<input type="text" name="endereco" class="texto--formulario" placeholder="EndereÃ§o" required>
+					<input type="text" name="endereco" class="texto--formulario" placeholder="Endereï¿½o" required>
 				</div>
 				<div class="formulario--dados">
-					<input type="text" name="telefone" class="texto--formulario" placeholder="Telefone (DDD) + (NÃºmero)" required>
+					<input type="text" name="telefone" class="texto--formulario" placeholder="Telefone (DDD) + (Nï¿½mero)" required>
 				</div>
 				<div class="formulario--dados">
 					<input type="text" name="email" class="texto--formulario" placeholder="E-mail" required>
@@ -25,22 +28,29 @@
 				<div class="formulario--dados">
 					<input type="password" name="password" class="texto--formulario" placeholder="Senha" required>
 				</div>
+				<div class="formulario--dados">
+					<input type="submit" class="botao direita" value="Enviar">
+				</div>
 			</div>
 			<div class="conteudo--interno conteudo--50 destaque">
-				<h1>Condições de Compra</h1>			
-				<div class="formulario--dados">
-					<input type="text" name="nome" class="tamanho--Compra" placeholder="CPF" required>
-				</div>
-				<div class="label--formulario">
-					<label for="cartao">Cartão de crédito/débito</label>
-				</div>
+				<h1>Condiï¿½ï¿½es de Compra</h1>			
 				<div class="formulario--dados">
 					<select id="selecao--formulario">
-  						<option value="nada"></option>
-  						<option value="credito">Cartão de Crédito</option>
- 						<option value="debito">Cartão de Dédito</option>  
- 						<option value="debito">Boleto Bancário</option>  						
+  						<option id="vazio">Selecione a forma de Pagamento</option>
+  						<option value="credito">Cartï¿½o de Crï¿½dito</option>
+ 						<option value="debito">Cartï¿½o de Dï¿½dito</option>	
+ 						<option value="debito">Boleto Bancï¿½rio</option>
+ 						<option value="debito">Paypal</option>
+ 						<option value="debito">PagueSeguro</option>  						
+>>>>>>> 73df6485efd61ea405c7ac59ae42ce0f4c7b9802
 					</select> 
+				</div>
+				
+				<h1>Dados de Compra</h1>			
+				<label class="formulario--dados" for="cartao">Cartï¿½o de crï¿½dito/dï¿½bito</label>
+				<div class="formulario--dados">
+					<h3>Valor Total:</h3>
+					<h3> R$ ${subtotal} + Frete </h3>
 				</div>	
 				<br>
 				<h1>Valores</h1>

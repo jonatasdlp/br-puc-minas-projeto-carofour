@@ -44,8 +44,8 @@ public class Cliente {
 	public void setDataNascimento(String dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
-	public char getSexo() {
-		return sexo;
+	public String getSexo() {
+		return this.sexo == 'm' ? "Masculino" : "Feminino";
 	}
 	
 	public void setSexo(char sexo) {

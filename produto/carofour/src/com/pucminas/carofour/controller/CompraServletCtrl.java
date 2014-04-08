@@ -35,12 +35,11 @@ public class CompraServletCtrl extends HttpServlet {
 			request.setAttribute("items", pedido.getItems());
 			request.setAttribute("subtotal", pedido.calcularCustoTotal());
 		}
-			
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/compras.jsp"); 
 	    dispatcher.forward(request, response); 
 	}
-
+	
 	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
 		Pedido pedido = (Pedido)session.getAttribute("pedido");
