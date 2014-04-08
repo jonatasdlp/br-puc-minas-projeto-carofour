@@ -9,6 +9,7 @@ $(function(){
 	removeItem();
 	removeItems();
 	redirectHome();
+	selecionarPagamento();
 });
 
 $( document ).ajaxComplete(function() {
@@ -139,4 +140,14 @@ function redirectHome() {
 	$( "#logo" ).on( "click", function() {
 		window.location = "/carofour/index"; 
 	});
+}
+
+function selecionarPagamento() {
+	$( ".formulario--dados select" ).on( "click", function() {
+		$( "#vazio" ).remove();
+	});
+}
+
+function validaFormularioCliente() {
+	// TODO validações
 }

@@ -346,10 +346,22 @@ textarea {
 } 
 
 .formulario--dados{
-	background-color: #2ECC71;
-	width: 382px;
+	width: 100%;
+	padding: 2px;
+}
+
+.formulario--dados input {
 	padding: 10px;
-	margin-left: 30px;
+}
+
+.formulario--dados select {
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+.formulario--dados input[type=submit] {
+	margin-right: 43px;
+>>>>>>> a47bd7e880fdc7cc6a6860a7f0e78bea0d29decc
 }
 
 .texto--formulario{
@@ -357,7 +369,7 @@ textarea {
 }
 
 #selecao--formulario{
-	width: 250px;
+	width: 81%;
 }
 
 .label--formulario
