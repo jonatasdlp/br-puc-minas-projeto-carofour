@@ -24,10 +24,10 @@ public class Pedido {
 		this.numero = numero;
 	}
 	
-	public double calcularCustoTotal(List<ItemPedido> items) {
+	public double calcularCustoTotal() {
 		double soma = 0;
-		for (ItemPedido itemPedido : items)
-			soma =+ (itemPedido.getProduto().getPreco() * itemPedido.getQuantidade()); 
+		for (ItemPedido itemPedido : this.items)
+			soma += (itemPedido.getProduto().getPreco() * itemPedido.getQuantidade()); 
 		
 		return soma;
 	}

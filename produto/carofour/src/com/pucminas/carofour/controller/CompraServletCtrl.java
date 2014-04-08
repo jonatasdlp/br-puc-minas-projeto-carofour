@@ -28,10 +28,14 @@ public class CompraServletCtrl extends HttpServlet {
 		HttpSession session = request.getSession();
 		Pedido pedido = (Pedido)session.getAttribute("pedido");
 		
-		if (pedido == null)
+		if (pedido == null) {
 			request.setAttribute("items", new ArrayList<ItemPedido>());
-		else
+			request.setAttribute("subtotal", 0);
+		} else {
 			request.setAttribute("items", pedido.getItems());
+			request.setAttribute("subtotal", pedido.calcularCustoTotal());
+		}
+			
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/compras.jsp"); 
 	    dispatcher.forward(request, response); 
@@ -43,16 +47,18 @@ public class CompraServletCtrl extends HttpServlet {
 		String produto = request.getParameter("produto");
 		String quantidade = request.getParameter("quantidade");
 		
-		if (pedido == null)
+		if (pedido == null) {
 			request.setAttribute("items", new ArrayList<ItemPedido>());
-		else {
+			request.setAttribute("subtotal", 0);
+		} else {
 			if((produto != null) && (quantidade != null))
 				pedido.atualizaItem(produto, Integer.parseInt(quantidade));
 					
 			request.setAttribute("items", pedido.getItems());
+			request.setAttribute("subtotal", pedido.calcularCustoTotal());
 		}
 				
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/compras.jsp"); 
+		RequestDispatcher dispatcher = request.getRequestDispatcher("partials/_compras.jsp"); 
 	    dispatcher.forward(request, response);
 	}
 	
@@ -68,10 +74,12 @@ public class CompraServletCtrl extends HttpServlet {
 				pedido.removerItem(produto);
 			else
 				pedido.removerItems();
+			
 			request.setAttribute("items", pedido.getItems());
+			request.setAttribute("subtotal", pedido.calcularCustoTotal());
 		}
 				
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/compras.jsp"); 
+		RequestDispatcher dispatcher = request.getRequestDispatcher("partials/_compras.jsp"); 
 	    dispatcher.forward(request, response);
 	}
 

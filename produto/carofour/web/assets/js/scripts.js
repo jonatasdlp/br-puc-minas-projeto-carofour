@@ -8,6 +8,13 @@ $(function(){
 	atualizarItem();
 	removeItem();
 	removeItems();
+	redirectHome();
+});
+
+$( document ).ajaxComplete(function() {
+	atualizarItem();
+	removeItem();
+	removeItems();
 });
 
 function redirecionarCategoria() {
@@ -94,7 +101,6 @@ function atualizarItem() {
 		    type: 'PUT',
 		    dataType: 'html',
 		    success: function(result) {
-		    	alert("Produto atualizado com sucesso!");
 		    	window.location.replace("/carofour/compras");
 		    }
 		});
@@ -108,9 +114,8 @@ function removeItem() {
 		$.ajax({
 		    url: url,
 		    type: 'DELETE',
-		    success: function(result) {
-		    	alert("Produto removido do carrinho!");
-		    	window.location.replace("/carofour/compras");
+		    success: function(data) {
+		    	$(".compras").replaceWith(data);
 		    }
 		});
 	});
@@ -123,10 +128,15 @@ function removeItems() {
 		$.ajax({
 		    url: url,
 		    type: 'DELETE',
-		    success: function(result) {
-		    	alert("Todos os produtos foram removidos");
-		    	window.location.replace("/carofour/compras");
+		    success: function(data) {
+		    	$(".compras").replaceWith(data);
 		    }
 		});
+	});
+}
+
+function redirectHome() {
+	$( "#logo" ).on( "click", function() {
+		window.location = "/carofour/index"; 
 	});
 }
