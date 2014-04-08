@@ -1,9 +1,6 @@
 package com.pucminas.carofour.controller;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,7 +8,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
 import com.pucminas.carofour.model.ItemPedido;
 import com.pucminas.carofour.model.Pedido;
 import com.pucminas.carofour.model.Produto;
@@ -52,6 +48,7 @@ public class AdicionarProdutoServletCtrl extends HttpServlet {
 
 		session.setAttribute("pedido", pedido);
 		request.setAttribute("items", pedido.getItems());
+		request.setAttribute("subtotal", pedido.calcularCustoTotal());
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/compras.jsp");
 		requestDispatcher.forward(request, response);
 	}

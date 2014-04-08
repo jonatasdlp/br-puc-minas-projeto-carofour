@@ -40,6 +40,12 @@
 								</td>
 							</tr>
 						</c:forEach>
+						<tr>
+							<td colspan="3"></td>
+							<td colspan="2">
+								<h5>Subtotal: R$ ${subtotal}</h5>
+							</td>
+						<tr>
 					</tbody>
 				</table>
 			</div>
