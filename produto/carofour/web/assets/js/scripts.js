@@ -10,6 +10,7 @@ $(function(){
 	removeItems();
 	redirectHome();
 	selecionarPagamento();
+	aplicarMascaras();
 });
 
 $( document ).ajaxComplete(function() {
@@ -145,6 +146,13 @@ function redirectHome() {
 function selecionarPagamento() {
 	$( ".formulario--dados select" ).on( "click", function() {
 		$( "#vazio" ).remove();
+	});
+}
+
+function aplicarMascaras() {
+	$('input[data-mask]').each(function() {
+	    var input = $(this);
+	    input.setMask(input.data('mask'));
 	});
 }
 
