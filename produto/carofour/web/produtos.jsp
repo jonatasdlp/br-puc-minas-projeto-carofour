@@ -24,7 +24,7 @@
 				<ul class="horizontal direita">
 					<li><a href="/carofour/compras" class="botao">Ver Carrinho</a></li>
 					<li><a href="#" class="botao" id="submit">Comprar Produto(s)</a></li>
-					<li><a href="#" class="botao">Fechar Compra</a></li>
+					<li><a href="/carofour/finalizar" class="botao">Fechar Compra</a></li>
 				</ul>
 			</div>
 			<c:forEach var="categoria" items="${categorias}">

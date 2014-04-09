@@ -2,9 +2,10 @@ package com.pucminas.carofour.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
- * @version 1.0
+ * @version 0.2
  */
 
 public class Pedido {
@@ -24,10 +25,10 @@ public class Pedido {
 		this.numero = numero;
 	}
 	
-	public double calcularCustoTotal(List<ItemPedido> items) {
+	public double calcularCustoTotal() {
 		double soma = 0;
-		for (ItemPedido itemPedido : items)
-			soma =+ (itemPedido.getProduto().getPreco() * itemPedido.getQuantidade()); 
+		for (ItemPedido itemPedido : this.items)
+			soma += (itemPedido.getProduto().getPreco() * itemPedido.getQuantidade()); 
 		
 		return soma;
 	}
@@ -79,6 +80,11 @@ public class Pedido {
 	
 	public void removerItems() {
 		this.items = new ArrayList<ItemPedido>();
+	}
+	
+	public void gerarNumeroPedido() {
+		Random randomGenerator = new Random();
+		this.numero = randomGenerator.nextInt(99999);
 	}
 	
 }

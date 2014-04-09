@@ -1,7 +1,7 @@
 package com.pucminas.carofour.model;
 
 /**
- * @version 1.0
+ * @version 0.2
  */
 
 public class Produto {

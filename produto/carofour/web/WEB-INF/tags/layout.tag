@@ -5,6 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Supermercado - Carofour</title>
 	<script type="text/javascript" src="assets/js/vendor/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="assets/js/vendor/meiomask.js"></script>
 	<script type="text/javascript" src="assets/js/scripts.js"></script>
 	<link type="text/css" rel="stylesheet" href="assets/css/styles.css">
 </head>

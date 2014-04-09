@@ -14,16 +14,16 @@
 		</div>
 		<div class="conteudo--interno conteudo--50">
 			<div class="categoria--principal">
-				<img alt="produto" src="assets/images/1.jpg" data-url="/carofour/categorias?q=${categorias.get(0).getIdCategoria()}">
+				<img alt="produto" src="assets/images/3.jpg" data-url="/carofour/categorias?q=${categorias.get(0).getIdCategoria()}">
 			</div>
 			<div class="categoria--principal">
 				<img alt="produto" src="assets/images/1.jpg" data-url="/carofour/categorias?q=${categorias.get(1).getIdCategoria()}">
 			</div>
 			<div class="categoria--principal">
-				<img alt="produto" src="assets/images/1.jpg" data-url="/carofour/categorias?q=${categorias.get(2).getIdCategoria()}">
+				<img alt="produto" src="assets/images/6.jpg" data-url="/carofour/categorias?q=${categorias.get(2).getIdCategoria()}">
 			</div>
 			<div class="categoria--principal">
-				<img alt="produto" src="assets/images/1.jpg" data-url="/carofour/categorias?q=${categorias.get(3).getIdCategoria()}">
+				<img alt="produto" src="assets/images/7.jpg" data-url="/carofour/categorias?q=${categorias.get(3).getIdCategoria()}">
 			</div>
 		</div>
     </jsp:body>
