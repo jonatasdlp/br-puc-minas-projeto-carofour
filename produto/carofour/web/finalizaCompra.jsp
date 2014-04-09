@@ -3,27 +3,41 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <t:layout>
 	<jsp:body>
-		<h1> Pedido realizado com sucesso: ${numero} </h1>
+		<div class="conteudo--interno conteudo--100 destaque titulo--cheio">
+			<h1> Pedido realizado com sucesso: ${numero} </h1>
+		</div>
 		<div class="conteudo--interno conteudo--50 destaque">
 			<h1>Informações dos Produtos</h1>
-			<c:forEach var="item" items="${items}">
-				<ul>
-					<li>${item.getProduto.getNome()}</li>
-					<li>${item.getQuantidade()}</li>
-					<li>${item.getPreço()}</li>
-					<li>${item.valorTotalProduto()}</li>
-				</ul>
-			</c:forEach>
+			<table>
+				<thead>
+					<tr>
+						<th>Produto</th>
+						<th>Qtd.</th>
+						<th>Preço</th>
+						<th>Total</th>
+					</tr>
+				</thead>
+				<tbody>
+					<c:forEach var="item" items="${items}">
+						<tr>
+							<td>${item.getProduto().getNome()}</td>
+							<td>${item.getQuantidade()}</td>
+							<td>${item.getProduto().getPreco()}</td>
+							<td>${item.valorTotalProduto()}</td>
+						</tr>
+					</c:forEach>
+				</tbody>
+			</table>
 		</div>
 		<div class="conteudo--interno conteudo--50 destaque">
 			<h1>Informações do Cliente</h1>
-			<ul>
-				<li>${cliente.getNome()}</li>
-				<li>${cliente.getDataNascimento()}</li>
-				<li>${cliente.getSexo()}</li>
-				<li>${cliente.getEndereco()}</li>
-				<li>${cliente.getTelefone()}</li>
-				<li>${cliente.getEmail()}</li>
+			<ul class="dados dados--usuario">
+				<li><b>Nome</b>: ${cliente.getNomeCompleto()}</li>
+				<li><b>Data Nascimento</b>: ${cliente.getDataNascimento()}</li>
+				<li><b>Sexo</b>: ${cliente.getSexo()}</li>
+				<li><b>Endereço</b>: ${cliente.getEndereco()}</li>
+				<li><b>Telefone</b>: ${cliente.getTelefone()}</li>
+				<li><b>E-mail</b>: ${cliente.getEmail()}</li>
 				<li></li>
 			</ul>
 		</div>		

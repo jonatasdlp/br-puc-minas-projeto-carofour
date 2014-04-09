@@ -143,6 +143,7 @@ textarea {
 	width: 355px;
 	clear: right;
 	float: left;
+	cursor: pointer;
 }
 
 .logo--principal {
@@ -360,46 +361,44 @@ textarea {
 }
 
 .formulario--dados input[type=submit] {
-	margin-right: 43px;
->>>>>>> a47bd7e880fdc7cc6a6860a7f0e78bea0d29decc
+	margin-right: 59px;
 }
 
-.texto--formulario{
+.texto--formulario {
 	width: 319px;
 }
 
-#selecao--formulario{
-	width: 81%;
+#selecao--formulario {
+	width: 343px;
+	margin: 10px 0px 22px;
 }
 
-.label--formulario
-{
+.label--formulario {
 	background-color: #2ECC71;
 	width: 402px;
 	margin-left: 30px;
 }
 
-.fieldset--formulario
-{
-	color: gray;
-	border: 1px solid lightgray;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
+.dados {
+	color: #2c3e50;
+	text-align: left !important;
+	padding: 2px;
 }
 
-.tamanho--Compra
-{
-	width: 100px;
+.dados li {
+	list-style: none;
+	background-color: #bdc3c7;
+	padding: 5px;
 }
 
-.lateral--Compra
-{
-	position: relative;
-	float: left;
-	margin-left: 30px;
+.titulo--cheio {
+	min-height: 0px;
+	margin-bottom: -25px;
 }
 
+.sem-margin {
+	margin: 0px !important;
+}
 
 
 

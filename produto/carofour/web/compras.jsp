@@ -8,7 +8,7 @@
 			<div class="acoes">
 				<ul class="horizontal direita">
 					<li><a href="#" class="botao" id="removeItems">Limpar Carrinho</a></li>
-					<li><a href="/carofour/categorias?q=Laticínios" class="botao">Continuar Compras</a></li>
+					<li><a href="/carofour/categorias?q=Laticinios" class="botao">Continuar Compras</a></li>
 					<li><a href="/carofour/finalizar" class="botao">Fechar Compra</a></li>
 				</ul>
 			</div>
