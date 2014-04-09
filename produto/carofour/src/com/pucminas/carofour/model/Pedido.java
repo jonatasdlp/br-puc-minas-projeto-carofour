@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * @version 1.0
+ * @version 0.2
  */
 
 public class Pedido {

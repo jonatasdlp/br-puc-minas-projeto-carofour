@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @version 1.0
+ * @version 0.2
  */
 
 public class Categoria {
@@ -48,7 +48,7 @@ public class Categoria {
 		List<Categoria> categorias = new LinkedList<Categoria>();
 		
 		Categoria categoriaLaticinios = new Categoria();
-		categoriaLaticinios.setNome("Laticínios");
+		categoriaLaticinios.setNome("Laticinios");
 		categoriaLaticinios.adicionarProduto(new Produto("Iogurte", "AKUT", "assets/images/3.jpg", 10.00));
 		categoriaLaticinios.adicionarProduto(new Produto("Mussarela", "Mieirinha", "assets/images/3.jpg", 10.00));
 		categoriaLaticinios.adicionarProduto(new Produto("Requijao", "DeLeiite", "assets/images/3.jpg", 10.00));

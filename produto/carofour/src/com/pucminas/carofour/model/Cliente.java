@@ -1,7 +1,7 @@
 package com.pucminas.carofour.model;
 
 /**
- * @version 1.0
+ * @version 0.2
  */
 
 public class Cliente {
@@ -45,7 +45,7 @@ public class Cliente {
 		this.dataNascimento = dataNascimento;
 	}
 	public String getSexo() {
-		return this.sexo == 'm' ? "Masculino" : "Feminino";
+		return (this.sexo == 'm') ? "Masculino" : "Feminino";
 	}
 	
 	public void setSexo(char sexo) {
