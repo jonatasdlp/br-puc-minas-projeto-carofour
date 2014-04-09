@@ -13,7 +13,7 @@ import com.pucminas.carofour.model.ItemPedido;
 import com.pucminas.carofour.model.Pedido;
 
 /**
- * @version 1.0
+ * @version 0.2
  */
 
 @WebServlet("/compras")

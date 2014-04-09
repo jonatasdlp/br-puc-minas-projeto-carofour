@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.pucminas.carofour.model.Categoria;
 
 /**
- * @version 1.0
+ * @version 0.2
  */
 
 @WebServlet("/categorias")

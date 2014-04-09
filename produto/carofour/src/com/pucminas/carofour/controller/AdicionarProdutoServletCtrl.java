@@ -13,7 +13,7 @@ import com.pucminas.carofour.model.Pedido;
 import com.pucminas.carofour.model.Produto;
 
 /**
- * @version 1.0
+ * @version 0.2
  */
 
 @WebServlet("/adicionarProdutos")
@@ -26,7 +26,7 @@ public class AdicionarProdutoServletCtrl extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
-		session.setMaxInactiveInterval(180);
+		session.setMaxInactiveInterval(250);
 		Pedido pedido = (Pedido)session.getAttribute("pedido");
 		ItemPedido itemPedido = null;
 		

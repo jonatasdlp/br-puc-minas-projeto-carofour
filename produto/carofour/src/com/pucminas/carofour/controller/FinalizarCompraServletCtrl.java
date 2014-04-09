@@ -13,6 +13,10 @@ import javax.servlet.http.HttpSession;
 import com.pucminas.carofour.model.Cliente;
 import com.pucminas.carofour.model.Pedido;
 
+/**
+ * @version 0.2
+ */
+
 @WebServlet("/finalizar")
 public class FinalizarCompraServletCtrl extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -44,7 +48,7 @@ public class FinalizarCompraServletCtrl extends HttpServlet {
 		
 		// TODO validações (server-side)
 		cliente.setNomeCompleto(request.getParameter("nome"));
-		cliente.setDataNascimento(request.getParameter("datanascimento"));
+		cliente.setDataNascimento(request.getParameter("nascimento"));
 		cliente.setSexo(request.getParameter("sexo").toCharArray()[0]);
 		cliente.setEndereco(request.getParameter("endereco"));
 		cliente.setTelefone(request.getParameter("telefone"));
