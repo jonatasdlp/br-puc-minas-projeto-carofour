@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context antiJARLocking="true" path="">
-    <Resource name="jdbc/carofour"
+    <Resource name="jdbc/carofour-ds"
               auth="Container"
               scope="Shareable"
               type="javax.sql.DataSource"
