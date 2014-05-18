@@ -17,17 +17,18 @@ import com.pucminas.carofour.model.Categoria;
 
 @WebServlet("/categorias")
 public class CategoriaServletCtrl extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+    
+    private static final long serialVersionUID = 1L;
 
-	public CategoriaServletCtrl() {
-		super();
-	}
+    public CategoriaServletCtrl() {
+        super();
+    }
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setAttribute("produtos", Categoria.listarCategorias().get(1).getProdutos());
-		request.setAttribute("categorias", Categoria.listarCategorias());
-		RequestDispatcher dispatcher = request.getRequestDispatcher("produtos.jsp"); 
-		dispatcher.forward(request, response);
-	}
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setAttribute("produtos", Categoria.listarCategorias().get(1).getProdutos());
+        request.setAttribute("categorias", Categoria.listarCategorias());
+        RequestDispatcher dispatcher = request.getRequestDispatcher("produtos.jsp");
+        dispatcher.forward(request, response);
+    }
 }
-
