@@ -15,7 +15,7 @@ import java.util.List;
  */
 
 public interface CategoriaDAO {
-    List<Produto> categorias();
+    List<Categoria> listCategorias();
     Produto find(Long id);
     boolean save(Categoria categoria);
     boolean remove(Long id);
