@@ -1,16 +1,16 @@
 $(function(){
 	redirecionarCategoria();
-	mostrarCategoria();
+	alterarCategoria();
 	adicionarItems();
 	marcarProduto();
 	adicionarItem();
-	ativarTabela();
 	atualizarItem();
 	removeItem();
 	removeItems();
 	redirectHome();
 	selecionarPagamento();
 	aplicarMascaras();
+	habilitaBotaoComprar();
 });
 
 $( document ).ajaxComplete(function() {
@@ -26,33 +26,21 @@ function redirecionarCategoria() {
 	});
 }
 
-function mostrarCategoria() {
-	$( ".selecao" ).on( "click", function(){
-		resetarCategorias();
-		ativarCategoria($( this ).data( "action" ));
-		$( this ).css("background-color", "#27ae60");
-	});
-}
-
-function ativarCategoria(element) {
-	$( element ).addClass( "ativo" );
-	$( element ).removeClass( "inativo" );
-}
-
-function resetarCategorias() {
-	$( ".produtos" ).each( function() {
-		$( this ).addClass( "inativo" );
-		$( this ).removeClass( "ativo" );
+function alterarCategoria() {
+	$( ".selecao" ).on( "click", function() {
+		window.location.href = $( this ).data( "url" );
+		return false;
 	});
 	
-	$( ".selecao" ).each( function() {
-		$( this ).removeAttr( "style" );
+	$( ".selecao" ).each( function(){
+		if ($( this ).data( "categoria" ) == $( ".produtos" ).data( "categoria" ))
+			$( this ).css( "background-color", "#27ae60" );
 	});
 }
 
 function adicionarItems() {
 	$( "#submit" ).on( "click", function(){
-		$( ".ativo form" ).submit();
+		$( "form" ).submit();
 	});
 }
 
@@ -150,9 +138,21 @@ function selecionarPagamento() {
 }
 
 function aplicarMascaras() {
-	$('input[data-mask]').each(function() {
+	$( "input[data-mask]" ).each(function() {
 	    var input = $(this);
-	    input.setMask(input.data('mask'));
+	    input.setMask(input.data( "mask" ));
+	});
+}
+
+function habilitaBotaoComprar() {
+	$( "#submit" ).css("display", "none");
+	
+	$( ".check" ).on( "click", function() {
+		$( ".check" ).each( function() {
+			if ($( this ).is(":checked")) {
+				$( "#submit" ).css("display", "initial");
+			}
+		});
 	});
 }
 
