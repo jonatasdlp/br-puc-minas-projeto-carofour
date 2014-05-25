@@ -11,7 +11,7 @@ create table clientes (
 );
 
 create table categorias (
-   id INT NOT NULL AUTO_INCREMENT,
+   id INT NOT NULL,
    nome VARCHAR(50) NOT NULL,
    urlImagem VARCHAR(255) NOT NULL,
    PRIMARY KEY ( id )
