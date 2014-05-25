@@ -1,17 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.pucminas.carofour.dao;
 
-import com.mysql.jdbc.Connection;
-import javax.sql.DataSource;
+import java.sql.Connection;
 import javax.naming.InitialContext;
+import javax.sql.DataSource;
 
 /**
  *
- * @author jonatas
+ * @version 0.2
  */
 public class DBManager {
 
@@ -27,13 +22,6 @@ public class DBManager {
         return DBManager.dbManager;
     }
 
-    /**
-     * Metodo utiliza o pool de conexoes do tomcat para retornar uma nova
-     * conexao. O metodo encapsula a forma como a conexao e criada.
-     *
-     * @return conexao com o banco de dados
-     * @throws Exception
-     */
     public Connection getConnection() throws Exception {
         DataSource dataSource;
         InitialContext initCtx = new InitialContext();
