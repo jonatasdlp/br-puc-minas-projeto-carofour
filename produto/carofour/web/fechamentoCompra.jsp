@@ -38,16 +38,13 @@
 					<select id="selecao--formulario">
   						<option id="vazio">Selecione a forma de Pagamento</option>
   						<option value="credito">Cartão de Crédito</option>
- 						<option value="debito">Cartão de Débito</option>	
  						<option value="debito">Boleto Bancário</option>
- 						<option value="debito">Paypal</option>
- 						<option value="debito">PagueSeguro</option>
  					</select> 
 				</div>
 				
 				<h1>Dados de Compra</h1>			
 				<div class="formulario--dados">
-					<h3>Valor Total:</h3>
+					<h3>Valor total da Compra:</h3>
 					<h3> R$ ${subtotal} + Frete </h3>
 				</div>	
 			</div>

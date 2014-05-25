@@ -58,7 +58,7 @@ public class Pedido {
 		boolean flag = true;
 		for (ItemPedido itemPedido : this.items) {
 			if (itemPedido.equals(item)) {
-				itemPedido.setQuantidade(1);
+				itemPedido.setQuantidade(itemPedido.getQuantidade() + 1);
 				flag = false;
 			}
 		}
@@ -73,9 +73,9 @@ public class Pedido {
 		}
 	}
 	
-	public void removerItem(String nomeProduto) {
+	public void removerItem(int idProduto) {
 		for (ItemPedido item : this.items) {
-			if (item.getProduto().getNome().equals(nomeProduto))
+			if (item.getProduto().getId() == idProduto)
 				this.items.remove(item);
 		}
 	}

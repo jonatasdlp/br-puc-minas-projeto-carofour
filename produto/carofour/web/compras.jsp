@@ -7,9 +7,11 @@
 			<h1>Minhas Compras</h1>
 			<div class="acoes">
 				<ul class="horizontal direita">
-					<li><a href="#" class="botao" id="removeItems">Limpar Carrinho</a></li>
 					<li><a href="categorias?id=1" class="botao">Continuar Compras</a></li>
-					<li><a href="finalizar" class="botao">Fechar Compra</a></li>
+					<c:if test="${!items.isEmpty()}">
+						<li><a href="#" class="botao" id="removeItems" data-url="compras">Limpar Carrinho</a></li>
+						<li><a href="finalizar" class="botao" id="fecharCompra">Fechar Compra</a></li>
+					</c:if>
 				</ul>
 			</div>
 			<div class="compras">

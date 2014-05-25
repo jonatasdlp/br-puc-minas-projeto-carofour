@@ -14,9 +14,9 @@ $(function(){
 });
 
 $( document ).ajaxComplete(function() {
-	atualizarItem();
 	removeItem();
-	removeItems();
+	atualizarItem();
+	habilitaAcaoCompras();
 });
 
 function redirecionarCategoria() {
@@ -113,8 +113,7 @@ function removeItem() {
 
 function removeItems() {
 	$( "#removeItems" ).on( "click", function() {
-		var element = $( this ).parent();
-		var url = element.data( "url" );
+		var url = $( this ).data( "url" );
 		$.ajax({
 		    url: url,
 		    type: 'DELETE',
@@ -148,12 +147,25 @@ function habilitaBotaoComprar() {
 	$( "#submit" ).css("display", "none");
 	
 	$( ".check" ).on( "click", function() {
+		var checked = false;
+		
 		$( ".check" ).each( function() {
 			if ($( this ).is(":checked")) {
 				$( "#submit" ).css("display", "initial");
+				checked = true;
 			}
 		});
+		
+		if (!checked)
+			$( "#submit" ).css("display", "none");
 	});
+}
+
+function habilitaAcaoCompras() {
+	if (!$(".compras table").length) {
+		$( "#removeItems" ).css("display", "none");
+		$( "#fecharCompra" ).css("display", "none");
+	} 
 }
 
 function validaFormularioCliente() {

@@ -27,7 +27,9 @@
 		                <ul class="horizontal direita">
 		                    <li><a href="/carofour/compras" class="botao">Ver Carrinho</a></li>
 		                    <li><a href="#" class="botao" id="submit">Comprar Produto(s)</a></li>
-		                    <li><a href="/carofour/finalizar" class="botao">Fechar Compra</a></li>
+		                    <c:if test="${items != null}">
+		                    	<li><a href="/carofour/finalizar" class="botao">Fechar Compra</a></li>
+		                   	</c:if>
 		                </ul>
 		            </div>
 	                <form action="/carofour/adicionarProdutos" method="POST">

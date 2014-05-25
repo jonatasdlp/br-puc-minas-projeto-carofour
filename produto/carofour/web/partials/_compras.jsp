@@ -27,9 +27,8 @@
 							<td><input type="number" value="${item.getQuantidade()}"
 								name="quantidade"></td>
 							<td>${item.valorTotalProduto()}</td>
-							<td data-url="/carofour/compras"
-								data-item="${item.produto.getNome()}"><a href="#"
-								class="atualiza">Atualizar</a> | <a href="#" class="remove">Remover</a>
+							<td data-url="/carofour/compras" data-item="${item.produto.getId()}">
+								<a href="#"class="atualiza">Atualizar</a> | <a href="#" class="remove">Remover</a>
 							</td>
 						</tr>
 					</c:forEach>
