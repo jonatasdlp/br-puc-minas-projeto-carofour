@@ -75,8 +75,10 @@ public class Pedido {
 	
 	public void removerItem(int idProduto) {
 		for (ItemPedido item : this.items) {
-			if (item.getProduto().getId() == idProduto)
+			if (item.getProduto().getId() == idProduto) {
 				this.items.remove(item);
+				break;
+			}
 		}
 	}
 	
