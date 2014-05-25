@@ -5,14 +5,23 @@ package com.pucminas.carofour.model;
  */
 
 public class ItemPedido {
+	private int id;
 	private int quantidade;
 	private Produto produto;
 
-	public ItemPedido(Produto produto, int quantidade) {
+	public ItemPedido(Produto produto) {
 		this.produto = produto;
-		this.quantidade = quantidade;
+		this.quantidade = 1;
+	}
+	
+	public int getId() {
+		return id;
 	}
 
+	public void setId(int id) {
+		this.id = id;
+	}
+	
 	public int getQuantidade() {
 		return quantidade;
 	}
@@ -31,6 +40,23 @@ public class ItemPedido {
 	
 	public double valorTotalProduto() {
 		return produto.getPreco() * this.quantidade;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		ItemPedido other = (ItemPedido) obj;
+		if (produto == null) {
+			if (other.produto != null)
+				return false;
+		} else if (produto.getId() != other.produto.getId())
+			return false;
+		return true;
 	}
 	
 }

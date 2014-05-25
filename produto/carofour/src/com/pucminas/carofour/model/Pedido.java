@@ -9,12 +9,21 @@ import java.util.Random;
  */
 
 public class Pedido {
+	private int id;
 	private int numero;
 	private Cliente cliente;
 	private List<ItemPedido> items;
 
 	public Pedido() {
 		items = new ArrayList<ItemPedido>();
+	}
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 	
 	public int getNumero() {
@@ -46,28 +55,21 @@ public class Pedido {
 	}
 
 	public void setItem(ItemPedido item) {
-		this.items.add(item);
-	}
-	
-	public boolean atualizaItem(Produto produto) {
-		boolean atualizaItem = false;
-		for (ItemPedido item : this.items) {
-			if (item.getProduto().getNome().equals(produto.getNome())) {
-				int quantidade = item.getQuantidade() + 1;
-				item.setQuantidade(quantidade);
-				atualizaItem = true;
+		boolean flag = true;
+		for (ItemPedido itemPedido : this.items) {
+			if (itemPedido.equals(item)) {
+				itemPedido.setQuantidade(1);
+				flag = false;
 			}
 		}
-		return atualizaItem;
+		if (flag)
+			this.items.add(item);
 	}
-
-	public void atualizaItem(String nomeProduto, int quantidade) {
-		for (ItemPedido item : this.items) {
-			if (item.getProduto().getNome().equals(nomeProduto)) {
-				int diferenca = quantidade - item.getQuantidade();
-				int qtd = item.getQuantidade() + diferenca;
-				item.setQuantidade(qtd);
-			}
+	
+	public void atualizaItem(int idProduto, int quantidade) {
+		for (ItemPedido itemPedido : this.items) {
+			if (itemPedido.getProduto().getId() == idProduto)
+				itemPedido.setQuantidade(quantidade);
 		}
 	}
 	
