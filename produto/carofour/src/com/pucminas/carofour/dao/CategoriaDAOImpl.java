@@ -6,7 +6,6 @@
 package com.pucminas.carofour.dao;
 
 import com.pucminas.carofour.model.Categoria;
-import com.pucminas.carofour.model.Produto;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -55,11 +54,6 @@ public class CategoriaDAOImpl implements CategoriaDAO {
         }
         
         return categorias;
-    }
-
-    @Override
-    public Produto find(Long id) {
-        return null;
     }
 
     @Override

@@ -7,7 +7,6 @@
 package com.pucminas.carofour.dao;
 
 import com.pucminas.carofour.model.Categoria;
-import com.pucminas.carofour.model.Produto;
 import java.util.List;
 
 /**
