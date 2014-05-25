@@ -70,10 +70,10 @@ public class CompraServletCtrl extends HttpServlet {
 			request.setAttribute("items", new ArrayList<ItemPedido>());
 		else {
 			if( produto != null)
-				pedido.removerItem(produto);
+				pedido.removerItem(Integer.parseInt(produto));
 			else
 				pedido.removerItems();
-			
+		
 			request.setAttribute("items", pedido.getItems());
 			request.setAttribute("subtotal", pedido.calcularCustoTotal());
 		}

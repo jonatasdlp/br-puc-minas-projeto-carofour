@@ -30,7 +30,6 @@ public class FinalizarCompraServletCtrl extends HttpServlet {
 		Pedido pedido = (Pedido)session.getAttribute("pedido");
 		
 		if (pedido == null) {
-			// TODO melhorar solução
 			String contextPath = request.getContextPath();
 			response.sendRedirect(response.encodeRedirectURL(contextPath + "/compras") );
 		} else {
