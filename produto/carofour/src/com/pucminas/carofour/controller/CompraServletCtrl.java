@@ -51,7 +51,7 @@ public class CompraServletCtrl extends HttpServlet {
 			request.setAttribute("subtotal", 0);
 		} else {
 			if((produto != null) && (quantidade != null))
-				pedido.atualizaItem(produto, Integer.parseInt(quantidade));
+				pedido.atualizaItem(Integer.parseInt(produto), Integer.parseInt(quantidade));
 					
 			request.setAttribute("items", pedido.getItems());
 			request.setAttribute("subtotal", pedido.calcularCustoTotal());

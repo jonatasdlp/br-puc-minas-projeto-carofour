@@ -23,10 +23,17 @@ public class CategoriaServletCtrl extends HttpServlet {
     public CategoriaServletCtrl() {
         super();
     }
-
+    
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setAttribute("produtos", Categoria.listarCategorias().get(1).getProdutos());
+    	int id = Integer.parseInt(request.getParameter("id"));
+    	Categoria categoria = Categoria.localizar(id);
+    	
+    	if (categoria != null) {
+    		request.setAttribute("categoria", categoria);
+    		request.setAttribute("produtos", categoria.getProdutos());
+    	}
+    	
         request.setAttribute("categorias", Categoria.listarCategorias());
         RequestDispatcher dispatcher = request.getRequestDispatcher("produtos.jsp");
         dispatcher.forward(request, response);

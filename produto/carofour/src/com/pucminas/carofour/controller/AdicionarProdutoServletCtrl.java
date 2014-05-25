@@ -34,15 +34,11 @@ public class AdicionarProdutoServletCtrl extends HttpServlet {
 			pedido = new Pedido();
 			
 		String [] produtos = request.getParameterValues("produtos");
-	    for (String nome : produtos) {
-			if ((nome != "") && (nome != null)) {
-				Produto produto = Produto.localizarProduto(nome);
-				if (produto != null) {
-					if (!pedido.atualizaItem(produto)) {
-						itemPedido = new ItemPedido(produto, 1);
-						pedido.setItem(itemPedido);
-					}
-				}
+	
+		for (String id : produtos) {
+			if (id != "") {
+				itemPedido = new ItemPedido(Produto.localizarProduto(Integer.parseInt(id)));
+				pedido.setItem(itemPedido);
 			}
 		}
 
