@@ -21,46 +21,46 @@
         <div class="conteudo--interno conteudo--75 destaque">
             <h1 id="tituloCategoria">Produtos categoria </h1>
             <div class="produtos" data-categoria="categoria${categoria.getId()}">
-            	<c:choose>
-            		<c:when test="${produtos != null}">
-	            	<div class="acoes">
-		                <ul class="horizontal direita">
-		                    <li><a href="/carofour/compras" class="botao">Ver Carrinho</a></li>
-		                    <li><a href="#" class="botao" id="submit">Comprar Produto(s)</a></li>
-		                    <c:if test="${items != null}">
-		                    	<li><a href="/carofour/finalizar" class="botao">Fechar Compra</a></li>
-		                   	</c:if>
-		                </ul>
-		            </div>
-	                <form action="/carofour/adicionarProdutos" method="POST">
-	                    <table>
-	                        <thead>
-	                            <tr>
-	                                <th></th>
-	                                <th>Nome/Descrição</th>
-	                                <th>Preço (R$)</th>
-	                                <th>Ação</th>
-	                            </tr>
-	                        </thead>
-	                        <tbody>
-	                            <c:forEach var="produto" items="${produtos}">
-	                                <tr>
-	                                    <td class="inputs">
-	                                        <input type="hidden" name="produtos" data-value="${produto.getId()}">
-	                                        <input type="checkbox" class="check">
-	                                    </td>
-	                                    <td>${produto.getNome()} - ${produto.getDescricao()}</td>
-	                                    <td>${produto.getPreco()}</td>
-	                                    <td class="acao" >Comprar</td>
-	                                </tr>
-	                            </c:forEach>
-	                        </tbody>
-	                    </table>
-	                </form>
-	                </c:when>
-	                <c:otherwise>
-	                	<h5>Categoria não encontrada</h5>
-      				</c:otherwise>
+                <c:choose>
+                    <c:when test="${produtos != null}">
+                        <div class="acoes">
+                            <ul class="horizontal direita">
+                                <li><a href="compras" class="botao">Ver Carrinho</a></li>
+                                <li><a href="#" class="botao" id="submit">Comprar Produto(s)</a></li>
+                                    <c:if test="${items != null}">
+                                    <li><a href="finalizar" class="botao">Fechar Compra</a></li>
+                                    </c:if>
+                            </ul>
+                        </div>
+                        <form action="adicionarProdutos" method="POST">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Nome/Descrição</th>
+                                        <th>Preço (R$)</th>
+                                        <th>Ação</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <c:forEach var="produto" items="${produtos}">
+                                        <tr>
+                                            <td class="inputs">
+                                                <input type="hidden" name="produtos" data-value="${produto.getId()}">
+                                                <input type="checkbox" class="check">
+                                            </td>
+                                            <td>${produto.getNome()} - ${produto.getDescricao()}</td>
+                                            <td>${produto.getPreco()}</td>
+                                            <td class="acao" >Comprar</td>
+                                        </tr>
+                                    </c:forEach>
+                                </tbody>
+                            </table>
+                        </form>
+                    </c:when>
+                    <c:otherwise>
+                        <h5>Categoria não encontrada</h5>
+                    </c:otherwise>
                 </c:choose>
             </div>
         </div>
