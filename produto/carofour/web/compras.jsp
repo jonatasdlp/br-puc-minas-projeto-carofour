@@ -9,7 +9,8 @@
 				<ul class="horizontal direita">
 					<li><a href="categorias?id=1" class="botao">Continuar Compras</a></li>
 					<c:if test="${!items.isEmpty()}">
-						<li><a href="#" class="botao" id="removeItems" data-url="compras">Limpar Carrinho</a></li>
+						<li><a href="#" class="botao" id="removeItems"
+							data-url="compras">Limpar Carrinho</a></li>
 						<li><a href="finalizar" class="botao" id="fecharCompra">Fechar Compra</a></li>
 					</c:if>
 				</ul>
@@ -32,13 +33,16 @@
 								<tr>
 									<td class="produto--img">
 										<div class="produto">
-											<img alt="${item.produto.getNome()}" src="${item.produto.getEnderecoImagem()}">
+											<img alt="${item.produto.getNome()}"
+													src="${item.produto.getEnderecoImagem()}">
 										</div>
 									</td>
 									<td>${item.produto.getNome()} - ${item.produto.getDescricao()}</td>
-									<td><input type="number" value="${item.getQuantidade()}" name="quantidade"></td>
+									<td><input type="number" value="${item.getQuantidade()}"
+											name="quantidade"></td>
 									<td>${item.valorTotalProduto()}</td>
-									<td data-url="/carofour/compras" data-item="${item.produto.getId()}">
+									<td data-url="/carofour/compras"
+											data-item="${item.produto.getId()}">
 										<a href="#" class="atualiza">Atualizar</a> | 
 										<a href="#" class="remove">Remover</a>
 									</td>
@@ -49,8 +53,10 @@
 								<td colspan="2">
 									<h5>Subtotal: R$ ${subtotal}</h5>
 								</td>
-							<tr>
-						</tbody>
+							
+								<tr>
+						
+							</tbody>
 					</table>
 					</c:when>
 					<c:otherwise>

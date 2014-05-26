@@ -5,7 +5,8 @@
 	<jsp:body>
 		<div class="conteudo--interno conteudo--50 destaque">
 			<h1>Bem-Vindo</h1>
-			<img alt="produto" src="assets/images/logo-principal.png" class="logo--principal">
+			<img alt="produto" src="assets/images/logo-principal.png"
+				class="logo--principal">
 			<p>
 			   Supermercado Carofour oferece soluções eficientes e inovadoras, 
 			   cuidando sempre dos pequenos detalhes, de modo a deixar a sua 
@@ -16,7 +17,9 @@
 		<div class="conteudo--interno conteudo--50">
         	<c:forEach var="categoria" items="${categorias}">
             	<div class="categoria--principal">
-                	<img alt="${categoria.getNome()}" src="${categoria.getUrlImagem()}" data-url="categorias?id=${categoria.getId()}">
+                	<img alt="${categoria.getNome()}"
+						src="${categoria.getUrlImagem()}"
+						data-url="categorias?id=${categoria.getId()}">
 				</div>
           	</c:forEach>
 		</div>

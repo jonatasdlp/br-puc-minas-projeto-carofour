@@ -34,7 +34,7 @@
 			<div class="conteudo--interno conteudo--50 destaque">
 				<h1>Forma de Pagamento</h1>			
 				<div class="formulario--dados">
-					<select id="selecao--formulario" name="tipoPagamento" required>
+					<select id="selecao--formulario" name="tipoPagamento" required >
   						<option id="vazio">Selecione a forma de Pagamento</option>
   						<option value="1">Cartão de Crédito</option>
  						<option value="2">Boleto Bancário</option>

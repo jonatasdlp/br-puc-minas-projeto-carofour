@@ -2,14 +2,17 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags"%>
 <t:layout>
-    <jsp:body>
+	<jsp:body>
         <div class="conteudo--interno conteudo--25 destaque">
             <h1>Categorias</h1>
             <div class="categorias">
                 <ul>
                     <c:forEach var="categoria" items="${categorias}">
-                        <li class="selecao" data-url="categorias?id=${categoria.getId()}" data-categoria="categoria${categoria.getId()}">
-                            <img alt="${categora.getNome}" src="${categoria.getUrlImagem()}">
+                        <li class="selecao"
+							data-url="categorias?id=${categoria.getId()}"
+							data-categoria="categoria${categoria.getId()}">
+                            <img alt="${categora.getNome}"
+							src="${categoria.getUrlImagem()}">
                             <div class="categoria--nome">
                                 <b>${categoria.getNome()}</b>
                             </div>
@@ -20,7 +23,8 @@
         </div>
         <div class="conteudo--interno conteudo--75 destaque">
             <h1 id="tituloCategoria">Produtos categoria </h1>
-            <div class="produtos" data-categoria="categoria${categoria.getId()}">
+            <div class="produtos"
+				data-categoria="categoria${categoria.getId()}">
             	<c:choose>
             		<c:when test="${produtos != null}">
 	            	<div class="acoes">
@@ -28,11 +32,13 @@
 		                    <li><a href="/carofour/compras" class="botao">Ver Carrinho</a></li>
 		                    <li><a href="#" class="botao" id="submit">Comprar Produto(s)</a></li>
 		                    <c:if test="${items != null}">
-		                    	<li><a href="/carofour/finalizar" class="botao">Fechar Compra</a></li>
+		                    	<li><a href="/carofour/finalizar"
+										class="botao">Fechar Compra</a></li>
 		                   	</c:if>
 		                </ul>
 		            </div>
-	                <form action="/carofour/adicionarProdutos" method="POST">
+	                <form action="/carofour/adicionarProdutos"
+							method="POST">
 	                    <table>
 	                        <thead>
 	                            <tr>
@@ -43,15 +49,18 @@
 	                            </tr>
 	                        </thead>
 	                        <tbody>
-	                            <c:forEach var="produto" items="${produtos}">
+	                            <c:forEach var="produto"
+										items="${produtos}">
 	                                <tr>
 	                                    <td class="inputs">
-	                                        <input type="hidden" name="produtos" data-value="${produto.getId()}">
-	                                        <input type="checkbox" class="check">
+	                                        <input type="hidden"
+												name="produtos" data-value="${produto.getId()}">
+	                                        <input type="checkbox"
+												class="check">
 	                                    </td>
 	                                    <td>${produto.getNome()} - ${produto.getDescricao()}</td>
 	                                    <td>${produto.getPreco()}</td>
-	                                    <td class="acao" >Comprar</td>
+	                                    <td class="acao">Comprar</td>
 	                                </tr>
 	                            </c:forEach>
 	                        </tbody>
