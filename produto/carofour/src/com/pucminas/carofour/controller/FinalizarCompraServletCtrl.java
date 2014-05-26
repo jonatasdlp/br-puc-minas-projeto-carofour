@@ -25,6 +25,7 @@ public class FinalizarCompraServletCtrl extends HttpServlet {
         super();
     }
 
+	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
 		Pedido pedido = (Pedido)session.getAttribute("pedido");
@@ -39,13 +40,12 @@ public class FinalizarCompraServletCtrl extends HttpServlet {
 		} 
 	}
 
-
+	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
 		Pedido pedido = (Pedido)session.getAttribute("pedido");
 		Cliente cliente = new Cliente();
-		
-		// TODO validações (server-side)
+
 		cliente.setNomeCompleto(request.getParameter("nome"));
 		cliente.setDataNascimento(request.getParameter("nascimento"));
 		cliente.setSexo(request.getParameter("sexo").toCharArray()[0]);
@@ -53,8 +53,10 @@ public class FinalizarCompraServletCtrl extends HttpServlet {
 		cliente.setTelefone(request.getParameter("telefone"));
 		cliente.setEmail(request.getParameter("email"));
 		cliente.setSenha(request.getParameter("senha"));
+		cliente.gravarDados();
 		
 		pedido.setCliente(cliente);
+		pedido.setTipoPagamento(Integer.parseInt(request.getParameter("tipoPagamento")));
 		pedido.gerarNumeroPedido();
 		request.setAttribute("numero", pedido.getNumero());
 		request.setAttribute("items", pedido.getItems());
