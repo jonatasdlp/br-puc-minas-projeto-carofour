@@ -13,6 +13,7 @@ public class Pedido {
 	private int numero;
 	private Cliente cliente;
 	private List<ItemPedido> items;
+	private int tipoPagamento;
 
 	public Pedido() {
 		items = new ArrayList<ItemPedido>();
@@ -24,6 +25,14 @@ public class Pedido {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+	
+	public int getTipoPagamento() {
+		return tipoPagamento;
+	}
+
+	public void setTipoPagamento(int tipoPagamento) {
+		this.tipoPagamento = tipoPagamento;
 	}
 	
 	public int getNumero() {
@@ -90,5 +99,4 @@ public class Pedido {
 		Random randomGenerator = new Random();
 		this.numero = randomGenerator.nextInt(99999);
 	}
-	
 }
