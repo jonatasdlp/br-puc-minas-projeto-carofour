@@ -347,6 +347,16 @@ textarea {
 .formulario--dados{
 	width: 100%;
 	padding: 2px;
+	color: black;
+}
+
+.input-radio input[type='radio'] {
+	margin-left: 75px;
+    
+}
+
+.align-left {
+	text-align: left;
 }
 
 .formulario--dados input {

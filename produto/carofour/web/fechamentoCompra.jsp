@@ -10,11 +10,10 @@
 				<div class="formulario--dados">
 					<input type="text" name="nascimento" data-mask="date" class="texto--formulario" placeholder="Data de Nascimento" required>
 				</div>
-				<div class="formulario--dados">
-					<select id="selecao--formulario" class="sem-margin" name="sexo">
- 						<option value="m">Masculino</option>
- 						<option value="f">Feminino</option>  						
-					</select>
+				<div class="formulario--dados input-radio align-left">
+					<input type="radio" name="sexo" value="m" checked>Masculino
+					<br>
+					<input type="radio" name="sexo" value="f">Feminino
 				</div>
 				<div class="formulario--dados">
 					<input type="text" name="endereco" class="texto--formulario" placeholder="Endereço" required>
@@ -26,7 +25,7 @@
 					<input type="text" name="email" class="texto--formulario" placeholder="E-mail" required>
 				</div>
 				<div class="formulario--dados">
-					<input type="password" name="password" class="texto--formulario" placeholder="Senha" required>
+					<input type="password" name="senha" class="texto--formulario" placeholder="Senha" required>
 				</div>
 				<div class="formulario--dados">
 					<input type="submit" class="botao direita" value="Enviar">
@@ -35,10 +34,10 @@
 			<div class="conteudo--interno conteudo--50 destaque">
 				<h1>Forma de Pagamento</h1>			
 				<div class="formulario--dados">
-					<select id="selecao--formulario">
+					<select id="selecao--formulario" name="tipoPagamento" required>
   						<option id="vazio">Selecione a forma de Pagamento</option>
-  						<option value="credito">Cartão de Crédito</option>
- 						<option value="debito">Boleto Bancário</option>
+  						<option value="1">Cartão de Crédito</option>
+ 						<option value="2">Boleto Bancário</option>
  					</select> 
 				</div>
 				
