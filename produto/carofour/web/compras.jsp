@@ -7,47 +7,56 @@
 			<h1>Minhas Compras</h1>
 			<div class="acoes">
 				<ul class="horizontal direita">
-					<li><a href="#" class="botao" id="removeItems">Limpar Carrinho</a></li>
-					<li><a href="/carofour/categorias?q=Laticinios" class="botao">Continuar Compras</a></li>
-					<li><a href="/carofour/finalizar" class="botao">Fechar Compra</a></li>
+					<li><a href="categorias?id=1" class="botao">Continuar Compras</a></li>
+					<c:if test="${!items.isEmpty()}">
+						<li><a href="#" class="botao" id="removeItems" data-url="compras">Limpar Carrinho</a></li>
+						<li><a href="finalizar" class="botao" id="fecharCompra">Fechar Compra</a></li>
+					</c:if>
 				</ul>
 			</div>
 			<div class="compras">
-				<table>
-					<thead>
-						<tr>
-							<th></th>
-						    <th>Nome/Descrição</th>
-						    <th>Quantidade</th>
-						    <th>Preço</th>
-						    <th>Ações</th>
-						</tr>
-					</thead>
-					<tbody>
-						<c:forEach var="item" items="${items}">
+				<c:choose>
+					<c:when test="${!items.isEmpty()}">
+					<table>
+						<thead>
 							<tr>
-								<td class="produto--img">
-									<div class="produto">
-										<img alt="${item.produto.getNome()}" src="${item.produto.getEnderecoImagem()}">
-									</div>
-								</td>
-								<td>${item.produto.getNome()} - ${item.produto.getDescricao()}</td>
-								<td><input type="number" value="${item.getQuantidade()}" name="quantidade"></td>
-								<td>${item.valorTotalProduto()}</td>
-								<td data-url="/carofour/compras" data-item="${item.produto.getNome()}">
-									<a href="#" class="atualiza">Atualizar</a> | 
-									<a href="#" class="remove">Remover</a>
-								</td>
+								<th></th>
+							    <th>Nome/Descrição</th>
+							    <th>Quantidade</th>
+							    <th>Preço</th>
+							    <th>Ações</th>
 							</tr>
-						</c:forEach>
-						<tr>
-							<td colspan="3"></td>
-							<td colspan="2">
-								<h5>Subtotal: R$ ${subtotal}</h5>
-							</td>
-						<tr>
-					</tbody>
-				</table>
+						</thead>
+						<tbody>
+							<c:forEach var="item" items="${items}">
+								<tr>
+									<td class="produto--img">
+										<div class="produto">
+											<img alt="${item.produto.getNome()}" src="${item.produto.getEnderecoImagem()}">
+										</div>
+									</td>
+									<td>${item.produto.getNome()} - ${item.produto.getDescricao()}</td>
+									<td><input type="number" value="${item.getQuantidade()}" name="quantidade"></td>
+									<td>${item.valorTotalProduto()}</td>
+									<td data-url="/carofour/compras" data-item="${item.produto.getId()}">
+										<a href="#" class="atualiza">Atualizar</a> | 
+										<a href="#" class="remove">Remover</a>
+									</td>
+								</tr>
+							</c:forEach>
+							<tr>
+								<td colspan="3"></td>
+								<td colspan="2">
+									<h5>Subtotal: R$ ${subtotal}</h5>
+								</td>
+							<tr>
+						</tbody>
+					</table>
+					</c:when>
+					<c:otherwise>
+						<h5>Carrinho vazio!</h5>
+					</c:otherwise>
+				</c:choose>
 			</div>
 		</div>
     </jsp:body>

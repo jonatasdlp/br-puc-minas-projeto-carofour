@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <t:layout>
 	<jsp:body>
 		<div class="conteudo--interno conteudo--50 destaque">
@@ -13,18 +14,11 @@
 			</p>
 		</div>
 		<div class="conteudo--interno conteudo--50">
-			<div class="categoria--principal">
-				<img alt="produto" src="assets/images/3.jpg" data-url="/categorias?q=${categorias.get(0).getIdCategoria()}">
-			</div>
-			<div class="categoria--principal">
-				<img alt="produto" src="assets/images/1.jpg" data-url="/categorias?q=${categorias.get(1).getIdCategoria()}">
-			</div>
-			<div class="categoria--principal">
-				<img alt="produto" src="assets/images/6.jpg" data-url="/categorias?q=${categorias.get(2).getIdCategoria()}">
-			</div>
-			<div class="categoria--principal">
-				<img alt="produto" src="assets/images/7.jpg" data-url="/categorias?q=${categorias.get(3).getIdCategoria()}">
-			</div>
+        	<c:forEach var="categoria" items="${categorias}">
+            	<div class="categoria--principal">
+                	<img alt="${categoria.getNome()}" src="${categoria.getUrlImagem()}" data-url="categorias?id=${categoria.getId()}">
+				</div>
+          	</c:forEach>
 		</div>
     </jsp:body>
 </t:layout>
