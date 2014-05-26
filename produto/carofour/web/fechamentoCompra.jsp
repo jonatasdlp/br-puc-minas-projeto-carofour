@@ -16,7 +16,7 @@
 					<input type="radio" name="sexo" value="f">Feminino
 				</div>
 				<div class="formulario--dados">
-					<input type="text" name="endereco" class="texto--formulario" placeholder="Endereço" required>
+					<input type="text" name="endereco" class="texto--formulario" placeholder="Endereï¿½o" required>
 				</div>
 				<div class="formulario--dados">
 					<input type="text" name="telefone" data-mask="phone" class="texto--formulario" placeholder="Telefone (DDD) + (Numero)" required>
@@ -34,10 +34,10 @@
 			<div class="conteudo--interno conteudo--50 destaque">
 				<h1>Forma de Pagamento</h1>			
 				<div class="formulario--dados">
-					<select id="selecao--formulario" name="tipoPagamento" required >
+					<select id="selecao--formulario" name="tipoPagamento" required>
   						<option id="vazio">Selecione a forma de Pagamento</option>
-  						<option value="1">Cartão de Crédito</option>
- 						<option value="2">Boleto Bancário</option>
+  						<option value="1">Cartï¿½o de Crï¿½dito</option>
+ 						<option value="2">Boleto Bancï¿½rio</option>
  					</select> 
 				</div>
 				
