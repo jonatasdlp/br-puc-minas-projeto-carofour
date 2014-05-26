@@ -4,9 +4,9 @@ create table clientes (
    email VARCHAR(90) NOT NULL,
    senha VARCHAR(12) NOT NULL,
    dataNascimento DATE NOT NULL,
-   sexo CHAR(1) NOT NULL,
+   sexo VARCHAR(1) NOT NULL,
    endereco VARCHAR(255) NOT NULL,
-   telefone VARCHAR(12) NOT NULL,
+   telefone VARCHAR(15) NOT NULL,
    PRIMARY KEY ( id )
 );
 
