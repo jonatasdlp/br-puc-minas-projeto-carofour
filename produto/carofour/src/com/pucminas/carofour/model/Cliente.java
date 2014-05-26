@@ -1,10 +1,13 @@
 package com.pucminas.carofour.model;
 
+import com.pucminas.carofour.dao.ClienteDAOImpl;
+
 /**
  * @version 0.2
  */
 
 public class Cliente {
+	private int id;
 	private String nomeCompleto;
 	private String email;
 	private String senha;
@@ -13,7 +16,16 @@ public class Cliente {
 	private String endereco;
 	private String telefone;
 	
-	public Cliente() {}
+	public Cliente() {
+		
+	}
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	
 	public String getNomeCompleto() {
 		return nomeCompleto;
@@ -45,7 +57,7 @@ public class Cliente {
 		this.dataNascimento = dataNascimento;
 	}
 	public String getSexo() {
-		return (this.sexo == 'm') ? "Masculino" : "Feminino";
+		return (this.sexo == 'm') ? "M" : "F";
 	}
 	
 	public void setSexo(char sexo) {
@@ -67,4 +79,9 @@ public class Cliente {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
+	
+	public void gravarDados() {
+		new ClienteDAOImpl().create(this);
+	}
+
 }
