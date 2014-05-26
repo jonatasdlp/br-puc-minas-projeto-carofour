@@ -26,6 +26,6 @@ public class DBManager {
         DataSource dataSource;
         InitialContext initCtx = new InitialContext();
         dataSource = (DataSource) initCtx.lookup("java:/comp/env/jdbc/carofour-ds");
-        return (Connection) dataSource.getConnection();
+        return dataSource.getConnection();
     }
 }

@@ -24,6 +24,7 @@ public class CompraServletCtrl extends HttpServlet {
         super();
     }
 
+	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
 		Pedido pedido = (Pedido)session.getAttribute("pedido");
@@ -40,6 +41,7 @@ public class CompraServletCtrl extends HttpServlet {
 	    dispatcher.forward(request, response); 
 	}
 	
+	@Override
 	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
 		Pedido pedido = (Pedido)session.getAttribute("pedido");
@@ -61,6 +63,7 @@ public class CompraServletCtrl extends HttpServlet {
 	    dispatcher.forward(request, response);
 	}
 	
+	@Override
 	protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
 		Pedido pedido = (Pedido)session.getAttribute("pedido");		
