@@ -31,7 +31,8 @@ create table produtos (
 create table pedidos (
    id INT NOT NULL AUTO_INCREMENT,
    idCliente INT NOT NULL,
-   numero INT NOT NULL,
+   numero INT NOT NULL, 
+   tipoPagamento VARCHAR(15) NOT NULL,
    PRIMARY key ( id ),
    CONSTRAINT fk_pedido_idCliente  FOREIGN KEY ( idCliente ) REFERENCES clientes ( id )
 );
@@ -40,6 +41,7 @@ create table itemPedido (
    id INT NOT NULL AUTO_INCREMENT,
    idProduto INT NOT NULL,
    idPedido INT NOT NULL,
+   quantidade INT NOT NULL,
    PRIMARY KEY ( id ),
    CONSTRAINT fk_itemPedido_idProduto  FOREIGN KEY ( idProduto ) REFERENCES produtos ( id ),
    CONSTRAINT fk_itemPedido_idPedido  FOREIGN KEY ( idPedido ) REFERENCES pedidos ( id )
