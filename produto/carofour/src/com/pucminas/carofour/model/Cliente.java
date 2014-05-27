@@ -81,7 +81,11 @@ public class Cliente {
 	}
 	
 	public void gravarDados() {
-		new ClienteDAOImpl().create(this);
+		new ClienteDAOImpl().save(this);
 	}
+        
+        public static Cliente localizarCliente(int id) {
+            return new ClienteDAOImpl().find(id);
+        }
 
 }
