@@ -1,413 +1,433 @@
 @font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/lato-black.eot');
-  src: url('../fonts/lato/lato-black.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-black.woff') format('woff'), url('../fonts/lato/lato-black.ttf') format('truetype'), url('../fonts/lato/lato-black.svg#latoblack') format('svg');
-  font-weight: 900;
-  font-style: normal;
+    font-family: 'Lato';
+    src: url('../fonts/lato/lato-black.eot');
+    src: url('../fonts/lato/lato-black.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-black.woff') format('woff'), url('../fonts/lato/lato-black.ttf') format('truetype'), url('../fonts/lato/lato-black.svg#latoblack') format('svg');
+    font-weight: 900;
+    font-style: normal;
 }
 @font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/lato-bold.eot');
-  src: url('../fonts/lato/lato-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-bold.woff') format('woff'), url('../fonts/lato/lato-bold.ttf') format('truetype'), url('../fonts/lato/lato-bold.svg#latobold') format('svg');
-  font-weight: bold;
-  font-style: normal;
+    font-family: 'Lato';
+    src: url('../fonts/lato/lato-bold.eot');
+    src: url('../fonts/lato/lato-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-bold.woff') format('woff'), url('../fonts/lato/lato-bold.ttf') format('truetype'), url('../fonts/lato/lato-bold.svg#latobold') format('svg');
+    font-weight: bold;
+    font-style: normal;
 }
 @font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/lato-bolditalic.eot');
-  src: url('../fonts/lato/lato-bolditalic.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-bolditalic.woff') format('woff'), url('../fonts/lato/lato-bolditalic.ttf') format('truetype'), url('../fonts/lato/lato-bolditalic.svg#latobold-italic') format('svg');
-  font-weight: bold;
-  font-style: italic;
+    font-family: 'Lato';
+    src: url('../fonts/lato/lato-bolditalic.eot');
+    src: url('../fonts/lato/lato-bolditalic.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-bolditalic.woff') format('woff'), url('../fonts/lato/lato-bolditalic.ttf') format('truetype'), url('../fonts/lato/lato-bolditalic.svg#latobold-italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
 }
 @font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/lato-italic.eot');
-  src: url('../fonts/lato/lato-italic.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-italic.woff') format('woff'), url('../fonts/lato/lato-italic.ttf') format('truetype'), url('../fonts/lato/lato-italic.svg#latoitalic') format('svg');
-  font-weight: normal;
-  font-style: italic;
+    font-family: 'Lato';
+    src: url('../fonts/lato/lato-italic.eot');
+    src: url('../fonts/lato/lato-italic.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-italic.woff') format('woff'), url('../fonts/lato/lato-italic.ttf') format('truetype'), url('../fonts/lato/lato-italic.svg#latoitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
 }
 @font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/lato-light.eot');
-  src: url('../fonts/lato/lato-light.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-light.woff') format('woff'), url('../fonts/lato/lato-light.ttf') format('truetype'), url('../fonts/lato/lato-light.svg#latolight') format('svg');
-  font-weight: 300;
-  font-style: normal;
+    font-family: 'Lato';
+    src: url('../fonts/lato/lato-light.eot');
+    src: url('../fonts/lato/lato-light.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-light.woff') format('woff'), url('../fonts/lato/lato-light.ttf') format('truetype'), url('../fonts/lato/lato-light.svg#latolight') format('svg');
+    font-weight: 300;
+    font-style: normal;
 }
 @font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/lato-regular.eot');
-  src: url('../fonts/lato/lato-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-regular.woff') format('woff'), url('../fonts/lato/lato-regular.ttf') format('truetype'), url('../fonts/lato/lato-regular.svg#latoregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Lato';
+    src: url('../fonts/lato/lato-regular.eot');
+    src: url('../fonts/lato/lato-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-regular.woff') format('woff'), url('../fonts/lato/lato-regular.ttf') format('truetype'), url('../fonts/lato/lato-regular.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 html,button,input,select,textarea {
-	color: #222;
+    color: #222;
 }
 
 body {
-	font-family: "Lato", Helvetica, Arial, sans-serif;
-	color: #ecf0f1;
-	font-size: 1em;
-	line-height: 1.4;
-	zoom: 1;
-	margin: 0px;
-	padding: 0px;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    color: #ecf0f1;
+    font-size: 1em;
+    line-height: 1.4;
+    zoom: 1;
+    margin: 0px;
+    padding: 0px;
 }
 
 h1, h2, h3, h4, h5, h6, ul {
-	margin: 0px;
+    margin: 0px;
 }
 
 fieldset {
-	border: 0;
-	margin: 0;
-	padding: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 table {
-	width: 100%;
+    width: 100%;
 }
 
 table thead {
-	background-color: #7f8c8d;
-	line-height: 2.5em;
-	color: white;
+    background-color: #7f8c8d;
+    line-height: 2.5em;
+    color: white;
 }
 
 table tbody {
-	background-color: #bdc3c7;
-	line-height: 2.5em;
-	color: white;
+    background-color: #bdc3c7;
+    line-height: 2.5em;
+    color: white;
 }
 
 a {
-	color: white;
+    color: white;
 }
 
 a:selected {
-	color: #ecf0f1;
+    color: #ecf0f1;
 }
 
 ::-moz-selection {
-	background: #b3d4fc;
-	text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 ::selection {
-	background: #b3d4fc;
-	text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 img {
-	vertical-align: middle;
+    vertical-align: middle;
 }
 
 textarea {
-	resize: vertical;
+    resize: vertical;
 }
 
 #corpo {
-	width: 980px;
-	margin: 0 auto;
+    width: 980px;
+    margin: 0 auto;
 }
 
 #cabecalho {
-	width: 100%;
-	min-height: 100px;	
-	background-color: #27ae60;
-	border-bottom: 15px solid #2ecc71;
+    width: 100%;
+    min-height: 100px;	
+    background-color: #27ae60;
+    border-bottom: 15px solid #2ecc71;
 }
 
 .conteudo {
-	width: 100%;
-	min-height: 400px;
-	background-color: #ecf0f1;
-	overflow: hidden;
+    width: 100%;
+    min-height: 400px;
+    background-color: #ecf0f1;
+    overflow: hidden;
 }
 
 #rodape {
-	width: 100%;
-	min-height: 100px;
-	background-color: #27ae60;
-	color: white;
-	text-align: center;
-	border-top: 15px solid #2ecc71;
+    width: 100%;
+    min-height: 100px;
+    background-color: #27ae60;
+    color: white;
+    text-align: center;
+    border-top: 15px solid #2ecc71;
 }
 
 #rodape h5 {
-	padding-top: 40px;
+    padding-top: 40px;
 }
 
 #logo {
-	width: 355px;
-	clear: right;
-	float: left;
-	cursor: pointer;
+    width: 355px;
+    clear: right;
+    float: left;
+    cursor: pointer;
 }
 
 .logo--principal {
-	width: 195px;
+    width: 195px;
 }
 
 #logo img {
-	width: 318px;
-	margin: 3px 10px;
+    width: 318px;
+    margin: 3px 10px;
 }
 
 .categoria--principal {
-	float: left;
-	width: 215px;
-	height: 170px;
-	margin: 7px;
-	background-color: #bdc3c7;
-	text-align: center;
+    float: left;
+    width: 215px;
+    height: 170px;
+    margin: 7px;
+    background-color: #bdc3c7;
+    text-align: center;
 }
 
 .categoria--principal img {
-	width: 191px;
-	height: 146px;
-	margin-top: 12px;
+    width: 191px;
+    height: 146px;
+    margin-top: 12px;
 }
 
 .categoria--principal img:hover {
-	opacity: 0.8;
+    opacity: 0.8;
 }
 
 .categoria--nome {
-	width: 100px;
-	padding: 10px;
-	line-height: 15px;
-	margin-top: 12px;
-	font-size: 17px;
-	float: left;
+    width: 100px;
+    padding: 10px;
+    line-height: 15px;
+    margin-top: 12px;
+    font-size: 17px;
+    float: left;
 }
 
 .categorias ul {
-	padding-left: 0px;
+    padding-left: 0px;
 }
 
 .categorias ul li {
-	list-style: none;
-	background-color: #2ecc71;
-	overflow: hidden;
-	margin-bottom: 5px;
+    list-style: none;
+    background-color: #2ecc71;
+    overflow: hidden;
+    margin-bottom: 5px;
 }
 
 .categorias ul li:hover {
-	background-color: #27ae60;	
-	opacity: 0.9;	
-	cursor: pointer;
+    background-color: #27ae60;	
+    opacity: 0.9;	
+    cursor: pointer;
 }
 
 .categorias ul li img {
-	list-style: none;
-	width: 80px;
-	height: 60px;
-	float: left;
+    list-style: none;
+    width: 80px;
+    height: 60px;
+    float: left;
 }
 
 .categoria--ativa {
-	background-color: #27ae60;
-	opacity: 0.9;
+    background-color: #27ae60;
+    opacity: 0.9;
 }
 
 .produto img {
-	width: 60px;
-	height: 40px;
+    width: 60px;
+    height: 40px;
 }
 
 .produtos {
-	float: left;
-	width: 100%;
-	color: #2c3e50;
+    float: left;
+    width: 100%;
+    color: #2c3e50;
 }
 
 .produtos form {
-	float: right;
-	width: 100%;
-	margin-top: 18px;
+    float: right;
+    width: 100%;
+    margin-top: 18px;
 }
 
 .produto--img {
-	width: 60px;
+    width: 60px;
 }
 
 .compras {
-	float: left;
-	width: 100%;
-	margin-top: 17px;
+    float: left;
+    width: 100%;
+    margin-top: 17px;
 }
 
 .compras h5 {
-	color: #34495E;
+    color: #34495E;
 }
 
 .conteudo--interno {
-	float: left;
-	min-height: 400px;
-	padding: 15px;
+    float: left;
+    min-height: 400px;
+    padding: 15px;
 }
 
 .conteudo--100 {
-	width: 950px;
+    width: 950px;
 }
 
 .conteudo--75 {
-	width: 690px;
+    width: 690px;
 }
 
 .conteudo--50 {
-	width: 460px;
+    width: 460px;
 }
 
 .conteudo--25 {
-	width: 230px;
+    width: 230px;
 }
 
 .conteudo--interno h1, h2, h3, h4, P, a  {
-	color: #2c3e50
+    color: #2c3e50
+}
+
+.conteudo--interno table {
+    margin-bottom: 20px;
 }
 
 .destaque {
-	text-align: center;
+    text-align: center;
 }
 
 .destaque p {
-	font-style: italic;
-	font-size: 17px;
-	line-height: 1.3em;
-	padding: 32px;
-	margin-top: -1px;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.3em;
+    padding: 32px;
+    margin-top: -1px;
 }
 
 .destaque h1, h2 {
-	background-color: #2ecc71;
-	color: white;
-	margin: 4px 0px 19px;
-	font-style: italic;
+    background-color: #2ecc71;
+    color: white;
+    margin: 4px 0px 19px;
+    font-style: italic;
 }
 
 #idiomas {
-	float: right;
-	top: 0;
-	margin: 10px 14px;
+    float: right;
+    top: 0;
+    margin: 10px 14px;
 }
 
 .horizontal li {
-	list-style: none;
-	float: left;
-	margin-right: 4px;
+    list-style: none;
+    float: left;
+    margin-right: 4px;
 }
 
 #idiomas ul li a {
-	font-style: italic;
-	font-size: 14px;
-	color: white;
+    font-style: italic;
+    font-size: 14px;
+    color: white;
 }
 
 .acoes {
-	text-align: rigth;
+    text-align: rigth;
 }
 
 .botao {
-	padding: 10px;
-	background-color: #34495e;
-	color: white;
-	text-decoration: none;
-	font-weight: bolder;
+    padding: 10px;
+    background-color: #34495e;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 .botao:hover {
-	background-color: #2c3e50;
+    background-color: #2c3e50;
 }
 
 .botao--alternativo {
-	background-color: #27ae60;
+    background-color: #27ae60;
 }
 
 .esquerda {
-	float: left;
+    float: left;
 }
 
 .direita {
-	float: right;
+    float: right;
 }
 
 .acao {
-	cursor: pointer;
-	background-color: #34495e;
-	font-weight: bolder;
+    cursor: pointer;
+    background-color: #34495e;
+    font-weight: bolder;
 }
 
 .acao:hover {
-	background-color: #2c3e50;
+    background-color: #2c3e50;
 } 
 
 .formulario--dados{
-	width: 100%;
-	padding: 2px;
-	color: black;
+    width: 100%;
+    padding: 2px;
+    color: black;
 }
 
 .input-radio input[type='radio'] {
-	margin-left: 75px;
-    
+    margin-left: 75px;
+
 }
 
 .align-left {
-	text-align: left;
+    text-align: left;
 }
 
 .formulario--dados input {
-	padding: 10px;
+    padding: 10px;
 }
 
 .formulario--dados select {
-	padding: 10px;
-	margin-bottom: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
 }
 
 .formulario--dados input[type=submit] {
-	margin-right: 59px;
+    margin-right: 59px;
 }
 
 .texto--formulario {
-	width: 319px;
+    width: 319px;
 }
 
 #selecao--formulario {
-	width: 343px;
-	margin: 10px 0px 22px;
+    width: 343px;
+    margin: 10px 0px 22px;
 }
 
 .label--formulario {
-	background-color: #2ECC71;
-	width: 402px;
-	margin-left: 30px;
+    background-color: #2ECC71;
+    width: 402px;
+    margin-left: 30px;
 }
 
 .dados {
-	color: #2c3e50;
-	text-align: left !important;
-	padding: 2px;
+    color: #2c3e50;
+    text-align: left !important;
+    padding: 2px;
 }
 
 .dados li {
-	list-style: none;
-	background-color: #bdc3c7;
-	padding: 5px;
+    list-style: none;
+    background-color: #bdc3c7;
+    padding: 5px;
 }
 
 .titulo--cheio {
-	min-height: 0px;
-	margin-bottom: -25px;
+    min-height: 0px;
+    margin-bottom: -25px;
 }
 
 .sem-margin {
-	margin: 0px !important;
+    margin: 0px !important;
 }
 
+.ui-datepicker .ui-datepicker-header {
+    background-color: #2ecc71;
+}
+
+.ui-datepicker .ui-datepicker-header a {
+    background-color: #27ae60;
+}
+
+.ui-datepicker-calendar thead {
+    background-color: #2D9B5B;
+}
+
+.ui-datepicker-calendar tbody {
+    background-color: #FDFEFF;
+    border: 1px solid gray;
+}
 
 
 
