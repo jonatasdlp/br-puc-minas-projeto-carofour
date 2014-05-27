@@ -65,7 +65,7 @@ public class FinalizarCompraServletCtrl extends HttpServlet {
         request.setAttribute("numero", pedido.getNumero());
         request.setAttribute("items", pedido.getItems());
         request.setAttribute("cliente", pedido.getCliente());
-        request.setAttribute("tipoPagamento", pedido.getTipoPagamento());
+        request.setAttribute("tipoPagamento", pedido.getFriendlyTipoPagemento());
         RequestDispatcher dispatcher = request.getRequestDispatcher("finalizaCompra.jsp");
         dispatcher.forward(request, response);
 
