@@ -7,7 +7,6 @@ import java.util.List;
 /**
  * @version 0.2
  */
-
 public interface CategoriaDAO {
     List<Categoria> listCategorias();
     Categoria find(int id);

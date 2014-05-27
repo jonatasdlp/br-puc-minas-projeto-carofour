@@ -7,11 +7,9 @@ import com.pucminas.carofour.model.Cliente;
 /**
  * @version 0.2
  */
-
 public interface ClienteDAO {
-	List<Cliente> listCategorias();
+    List<Cliente> listClientes();
     Cliente find(int id);
-    boolean create(Cliente cliente);
-    boolean update(Cliente cliente);
+    boolean save(Cliente cliente);
     boolean remove(int id);
 }

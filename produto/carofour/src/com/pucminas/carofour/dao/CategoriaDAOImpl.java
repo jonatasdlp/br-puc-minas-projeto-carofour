@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
  * @version 0.2
  */
 public class CategoriaDAOImpl implements CategoriaDAO {
