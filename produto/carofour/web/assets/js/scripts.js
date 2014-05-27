@@ -12,6 +12,7 @@ $(function() {
     aplicarMascaras();
     habilitaBotaoComprar();
     validaQuantidade();
+    formularioCliente();
 });
 
 $(document).ajaxComplete(function() {
@@ -177,6 +178,6 @@ function validaQuantidade() {
     });
 }
 
-function validaFormularioCliente() {
-    // TODO validações
+function formularioCliente() {
+   $("#nascimento").datepicker();
 }
