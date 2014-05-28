@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app id="WebApp_ID" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     <display-name>carofour</display-name>
-    <servlet>
-        <servlet-name>AtualizarProdutoServletCtrl</servlet-name>
-        <servlet-class>com.pucminas.carofour.controller.AtualizarProdutoServletCtrl</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>RemoverProdutoServletCtrl</servlet-name>
-        <servlet-class>com.pucminas.carofour.controller.RemoverProdutoServletCtrl</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>AtualizarProdutoServletCtrl</servlet-name>
-        <url-pattern>/AtualizarProdutoServletCtrl</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>RemoverProdutoServletCtrl</servlet-name>
-        <url-pattern>/RemoverProdutoServletCtrl</url-pattern>
-    </servlet-mapping>
+    <context-param>
+        <param-name>
+            javax.servlet.jsp.jstl.fmt.localizationContext
+        </param-name>
+        <param-value>messages</param-value>
+    </context-param>
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>

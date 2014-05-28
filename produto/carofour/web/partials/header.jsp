@@ -5,8 +5,8 @@
 </div>
 <div id="idiomas">
     <ul class="horizontal">
-        <li><a href="#">Portugês</a></li>
+        <li><a href="index?lingua=pt_BR">Portugï¿½s</a></li>
         <li>|</li>
-        <li><a href="#">Espanhol</a></li>
+        <li><a href="index?lingua=es_ES">Espanhol</a></li>
     </ul>
 </div>
