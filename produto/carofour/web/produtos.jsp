@@ -1,10 +1,11 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <t:layout>
     <jsp:body>
         <div class="conteudo--interno conteudo--25 destaque">
-            <h1>Categorias</h1>
+            <h1><fmt:message key="site.categorias"/></h1>
             <div class="categorias">
                 <ul>
                     <c:forEach var="categoria" items="${categorias}">
@@ -19,16 +20,16 @@
             </div>
         </div>
         <div class="conteudo--interno conteudo--75 destaque">
-            <h1 id="tituloCategoria">Produtos categoria </h1>
+            <h1 id="tituloCategoria"><fmt:message key="site.produtosCategoria"/></h1>
             <div class="produtos" data-categoria="categoria${categoria.getId()}">
                 <c:choose>
                     <c:when test="${produtos != null}">
                         <div class="acoes">
                             <ul class="horizontal direita">
-                                <li><a href="compras" class="botao">Ver Carrinho</a></li>
-                                <li><a href="#" class="botao" id="submit">Comprar Produto(s)</a></li>
+                                <li><a href="compras" class="botao"><fmt:message key="site.carrinho"/></a></li>
+                                <li><a href="#" class="botao" id="submit"><fmt:message key="site.comprar"/></a></li>
                                     <c:if test="${items != null}">
-                                    <li><a href="finalizar" class="botao">Fechar Compra</a></li>
+                                    <li><a href="finalizar" class="botao"><fmt:message key="site.fecharCompra"/></a></li>
                                     </c:if>
                             </ul>
                         </div>
