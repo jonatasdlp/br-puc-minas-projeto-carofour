@@ -13,7 +13,6 @@ import com.pucminas.carofour.model.Categoria;
 /**
  * @version 0.2
  */
-
 @WebServlet("/index")
 public class HomeServletCtrl extends HttpServlet {
 

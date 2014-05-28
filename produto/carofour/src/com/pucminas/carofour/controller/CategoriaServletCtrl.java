@@ -16,32 +16,32 @@ import com.pucminas.carofour.model.Pedido;
 /**
  * @version 0.2
  */
-
 @WebServlet("/categorias")
 public class CategoriaServletCtrl extends HttpServlet {
-    
+
     private static final long serialVersionUID = 1L;
 
     public CategoriaServletCtrl() {
         super();
     }
-    
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    	int id = Integer.parseInt(request.getParameter("id"));
-    	HttpSession session = request.getSession();
-		session.setMaxInactiveInterval(250);
-		Pedido pedido = (Pedido)session.getAttribute("pedido");
-    	Categoria categoria = Categoria.localizar(id);
-    	
-    	if ((pedido != null) && (!pedido.getItems().isEmpty()))
-    		request.setAttribute("items", pedido.getItems());
-    	
-    	if (categoria != null) {
-    		request.setAttribute("categoria", categoria);
-    		request.setAttribute("produtos", categoria.getProdutos());
-    	}
-    	
+        int id = Integer.parseInt(request.getParameter("id"));
+        HttpSession session = request.getSession();
+        session.setMaxInactiveInterval(250);
+        Pedido pedido = (Pedido) session.getAttribute("pedido");
+        Categoria categoria = Categoria.localizar(id);
+
+        if ((pedido != null) && (!pedido.getItems().isEmpty())) {
+            request.setAttribute("items", pedido.getItems());
+        }
+
+        if (categoria != null) {
+            request.setAttribute("categoria", categoria);
+            request.setAttribute("produtos", categoria.getProdutos());
+        }
+
         request.setAttribute("categorias", Categoria.listarCategorias());
         RequestDispatcher dispatcher = request.getRequestDispatcher("produtos.jsp");
         dispatcher.forward(request, response);

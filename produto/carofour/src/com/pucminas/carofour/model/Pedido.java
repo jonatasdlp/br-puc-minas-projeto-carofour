@@ -39,17 +39,6 @@ public class Pedido {
     public String getTipoPagamento() {
         return tipoPagamento;
     }
-    
-    public String getFriendlyTipoPagemento() {
-        switch (tipoPagamento) {
-            case "credido":
-                return "Cartão de Crédito";
-            case "boleto":
-                return "Boleto Bancário";
-        }
-      
-        return null;
-    }
 
     public void setTipoPagamento(String tipoPagamento) {
         this.tipoPagamento = tipoPagamento;
@@ -130,5 +119,4 @@ public class Pedido {
         }
         return false;
     }
-
 }
