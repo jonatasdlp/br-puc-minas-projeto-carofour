@@ -38,9 +38,9 @@
                                 <thead>
                                     <tr>
                                         <th></th>
-                                        <th>Nome/Descrição</th>
-                                        <th>Preço (R$)</th>
-                                        <th>Ação</th>
+                                        <th><fmt:message key="tabela.nome"/></th>
+                                        <th><fmt:message key="tabela.preco"/> (R$)</th>
+                                        <th><fmt:message key="tabela.acao"/></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -52,7 +52,7 @@
                                             </td>
                                             <td>${produto.getNome()} - ${produto.getDescricao()}</td>
                                             <td>${produto.getPreco()}</td>
-                                            <td class="acao" >Comprar</td>
+                                            <td class="acao" ><fmt:message key="item.comprar"/></td>
                                         </tr>
                                     </c:forEach>
                                 </tbody>
@@ -60,7 +60,7 @@
                         </form>
                     </c:when>
                     <c:otherwise>
-                        <h5>Categoria não encontrada</h5>
+                        <h5><fmt:message key="site.categoria.naoEncontrada"/></h5>
                     </c:otherwise>
                 </c:choose>
             </div>
