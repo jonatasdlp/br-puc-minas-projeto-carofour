@@ -27,7 +27,7 @@ public class AdicionarProdutoServletCtrl extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
-        session.setMaxInactiveInterval(250);
+        session.setMaxInactiveInterval(500);
         Pedido pedido = (Pedido) session.getAttribute("pedido");
         ItemPedido itemPedido = null;
 

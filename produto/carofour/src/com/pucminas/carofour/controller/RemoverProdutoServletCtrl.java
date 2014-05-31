@@ -8,7 +8,6 @@ package com.pucminas.carofour.controller;
 import com.pucminas.carofour.model.ItemPedido;
 import com.pucminas.carofour.model.Pedido;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -25,7 +24,9 @@ import javax.servlet.http.HttpSession;
 @WebServlet("/removerProduto")
 public class RemoverProdutoServletCtrl extends HttpServlet {
 
-    @Override
+	private static final long serialVersionUID = 1L;
+
+	@Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         HttpSession session = request.getSession();

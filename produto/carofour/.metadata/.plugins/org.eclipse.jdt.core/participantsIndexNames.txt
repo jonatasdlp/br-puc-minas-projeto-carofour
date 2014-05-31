@@ -1,0 +1,5 @@
+INDEX VERSION 1.126
+C:\Users\Magnum\Desktop\Projeto\puc-minas-projeto-carofour\produto\carofour\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1527448943.index
+\carofour\src
+C:\Users\Magnum\Desktop\Projeto\puc-minas-projeto-carofour\produto\carofour\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4217425772.index
+\carofour\src

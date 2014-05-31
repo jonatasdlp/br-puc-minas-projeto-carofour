@@ -29,7 +29,7 @@ public class CategoriaServletCtrl extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         HttpSession session = request.getSession();
-        session.setMaxInactiveInterval(250);
+        session.setMaxInactiveInterval(500);
         Pedido pedido = (Pedido) session.getAttribute("pedido");
         Categoria categoria = Categoria.localizar(id);
 

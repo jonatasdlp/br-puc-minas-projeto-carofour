@@ -1,5 +1,6 @@
 package com.pucminas.carofour.model;
 
+import com.pucminas.carofour.dao.CategoriaDAO;
 import com.pucminas.carofour.dao.CategoriaDAOImpl;
 import com.pucminas.carofour.dao.ProdutoDAOImpl;
 
@@ -57,7 +58,7 @@ public class Categoria {
     }
     
     public static Categoria localizar(int id) {
-        CategoriaDAOImpl categorias = new CategoriaDAOImpl();
+        CategoriaDAO categorias = new CategoriaDAOImpl();
         return categorias.find(id);
     }
 }

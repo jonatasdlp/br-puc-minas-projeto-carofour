@@ -5,7 +5,6 @@ import com.pucminas.carofour.dao.ClienteDAOImpl;
 /**
  * @version 0.2
  */
-
 public class Cliente {
 	private int id;
 	private String nomeCompleto;
@@ -84,8 +83,8 @@ public class Cliente {
 		new ClienteDAOImpl().save(this);
 	}
         
-        public static Cliente localizarCliente(int id) {
-            return new ClienteDAOImpl().find(id);
-        }
+    public static Cliente localizarCliente(int id) {
+        return new ClienteDAOImpl().find(id);
+    }
 
 }

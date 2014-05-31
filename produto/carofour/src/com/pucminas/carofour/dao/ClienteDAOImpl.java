@@ -1,10 +1,10 @@
 package com.pucminas.carofour.dao;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -110,11 +110,13 @@ public class ClienteDAOImpl implements ClienteDAO {
                     + "sexo = ?, endereco = ?, telefone = ?, senha = ?  where id = ?";
             connection = this.dbManager.getConnection();
             statement = connection.prepareStatement(sql);
-            String[] date = cliente.getDataNascimento().split("/");
+ 
+            SimpleDateFormat startFormat = new SimpleDateFormat("dd/MM/yyyy");
+            java.sql.Date dateFormated = new java.sql.Date(startFormat.parse(cliente.getDataNascimento()).getTime());         
 
             statement.setString(1, cliente.getNomeCompleto());
             statement.setString(2, cliente.getEmail());
-            statement.setDate(3, new Date(Integer.parseInt(date[2]), Integer.parseInt(date[1]), Integer.parseInt(date[0])));
+            statement.setDate(3, dateFormated);
             statement.setString(4, cliente.getSexo());
             statement.setString(5, cliente.getEndereco());
             statement.setString(6, cliente.getTelefone());
@@ -141,11 +143,12 @@ public class ClienteDAOImpl implements ClienteDAO {
                     + "sexo, endereco, telefone, senha) values (?, ?, ?, ?, ?, ?, ?)";
             connection = this.dbManager.getConnection();
             statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-            String[] date = cliente.getDataNascimento().split("/");
+            SimpleDateFormat startFormat = new SimpleDateFormat("dd/MM/yyyy");           
+            java.sql.Date dateFormated =  new java.sql.Date(startFormat.parse(cliente.getDataNascimento()).getTime());
 
             statement.setString(1, cliente.getNomeCompleto());
             statement.setString(2, cliente.getEmail());
-            statement.setDate(3, new Date(Integer.parseInt(date[2]), Integer.parseInt(date[1]), Integer.parseInt(date[0])));
+            statement.setDate(3, dateFormated);
             statement.setString(4, cliente.getSexo());
             statement.setString(5, cliente.getEndereco());
             statement.setString(6, cliente.getTelefone());
